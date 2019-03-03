@@ -1,37 +1,19 @@
-From news.Arizona.EDU!math.arizona.edu!CS.Arizona.EDU!uunet!mnemosyne.cs.du.edu!nyx.cs.du.edu!not-for-mail Wed Aug 31 10:36:06 1994
-Path: news.Arizona.EDU!math.arizona.edu!CS.Arizona.EDU!uunet!mnemosyne.cs.du.edu!nyx.cs.du.edu!not-for-mail
-From: raustin@nyx.cs.du.edu (Ronald Austin)
-Newsgroups: alt.2600,alt.2600hz
-Subject: FBI Agents Capture Computer Criminal
-Date: 31 Aug 1994 00:14:35 -0600
-Organization: Nyx, Public Access Unix @ U. of Denver Math/CS dept.
-Lines: 164
-Message-ID: <34174b$dg5@nyx.cs.du.edu>
-NNTP-Posting-Host: nyx.cs.du.edu
-X-Newsreader: TIN [version 1.2 PL2]
-Xref: news.Arizona.EDU alt.2600:19872 alt.2600hz:56
-
-Computer Criminal Caught After 10 Months On The Run
-By: Keith Stone
-Daily News Staff Writer
-Daily News - August 30, 1994
-
 Convicted computer criminal Justin Tanner Petersen was captured Monday in
-Los Angeles, 10 months after federal authorities said they discovered he
+<location>Los Angeles</location>, 10 months after federal authorities said they discovered he
 had begun living a dual life as thier informant and an outlaw hacker.
 
 Petersen, 34, was arrested about 3:30 a.m. outside a Westwood apartment
-that FBI agnets had placed under surveillance, said Assistant U.S.
+that FBI agnets had placed under surveillance, said Assistant <location>U.S.</location>
 Attorney David Schindler.
 
 A flamboyant hacker known in the computer world as "Agent Steal," Petersen
-was being held without bail in the federal detention center in Los Angeles.
+was being held without bail in the federal detention center in <location>Los Angeles</location>.
 
-U.S. District Court Judge Stephen V. Wilson scheduled a sentencing hearing
+<location>U.S.</location> District Court Judge Stephen V. Wilson scheduled a sentencing hearing
 for Oct. 31.
 
 Petersen faces a maximum of 40 years in prison for using his sophisticated
-computer skills to rig a radio contest in Los Angeles, tap telephone lines
+computer skills to rig a radio contest in <location>Los Angeles</location>, tap telephone lines
 and enrich himself with credit cards.
 
 Monday's arrest ends Petersen's run from the same FBI agents with whom he
@@ -50,7 +32,7 @@ agreement.
 
 The deal fell apart Oct. 22.  Petersen admitted that he had not given up 
 computer crime, but somehow managed to slip out of the federal courthouse
-in Los Angeles.
+in <location>Los Angeles</location>.
 
 He then disappeared.
 
@@ -58,7 +40,7 @@ Several weeks ago, a man who identified himself as Petersen called the Daily
 News from an undisclosed location.  Petersen's mother later confirmed the 
 caller was him.
 
-Petersen said he was living comfortably outside the United States and working
+Petersen said he was living comfortably outside the <location>United States</location> and working
 as a bartender.  He predicted he wouldn't be caught.
 
 "I think I'll have to run for two years.  They'll stop looking for me, or it
@@ -118,10 +100,10 @@ promotional contests.  In 1989, Petersen used that trick and walked away with
 $10,000 in prize money from an FM station, court records show.
 
 When that and other misdeeds began to catch up with him, Petersen said, he 
-fled to Dallas, where he assumed the alias Samuel Grossman and continued 
+fled to <location>Dallas</location>, where he assumed the alias Samuel Grossman and continued 
 using computers to make money illegally.
 
-In the summer of 1991 in Dallas, Petersen was pulled over driving a stolen
+In the summer of 1991 in <location>Dallas</location>, Petersen was pulled over driving a stolen
 Porsche and was arrested on charges that he had broken into credit bureau
 computers as part of a credit card scheme.
 
@@ -139,40 +121,7 @@ When he as finally arrested in 1991, Petersen played his last card.
 "I called up the FBI and said: 'Guess what? I am in jail,' " he said.
 
 He said he spent the next four months in prison, negotiating for his freedom
-with the promise that he would act as an informant in Los Angeles.
+with the promise that he would act as an informant in <location>Los Angeles</location>.
 
 The FBI paid his rent and utilities and gave him $200 a week for spending
 money and medical insurance, Petersen said.
-
-They also provided him with a computer and phone lines to gather information 
-on hackers, he said.
-
-Petersen pointed agents to the location of Kevin Lee Poulsen's computer.
-Poulsen was convicted in June of rigging radio station telephones to win
-Porsches, cash and a trip to Hawaii.
-
-Poulsen already has spent 3 1/2 years in custody - more time than any other
-hacker - and now is awaiting trial in San Francisco on espionage charges that
-involve breaking into an Army computer network.
-
-Coincidentally, on Monday a federal judge in Los Angeles denied a motion to
-unseal a plea agreement Poulsen had signed in the radio scheme conviction.
-But the judge allowed the agreement to be used in the San Francisco case
-if the judge there agrees.
-
-Another computer hacker Petersen said he helped the FBI gather information
-on was Kevin Mitnick, a Calabasas man who was on probation for an earlier
-computer crime conviction.
-
-Mitnick is a fugitive.
-
-Eventually, Petersen said, the FBI stopped supporting him so he turned to
-his nightclubs for income.  But when that began to fail, he returned to 
-hacking for profit.
-
-"I was stuck out on a limb.  I was almost out on the street.  My club
-was costing me money because it was a new club," he said.  "So I did what
-I had to do.  I an not a greedy person."
-
-
-
