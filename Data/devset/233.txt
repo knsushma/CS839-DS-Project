@@ -1,34 +1,6 @@
-File: THE FBI GOES AFTER ADS HACKERS
- Read 17 times
-
-			  FBI GOES AFTER ADS HACKERS
-			     [2600 - January 1984]
-
--------------------------------------------------------------------------------
-IBM must press charges before action can be taken -- Feds reveal their tactics,
-				  blow source
--------------------------------------------------------------------------------
-
-   We received this bombshell from an anonymous contributor.  It seems that a
-group of hackers was making use of one of IBM's ADS systems.  (Audio
-Distribution Systems enable users with touch-tone phones to send voice messages
-back and forth to each other...)  Unforturately, as is all too often the case,
-one of these hackers was really an FBI informant who was taking note of all of
-the illegitimate users (around 40 or so).  Luckily for this particular group,
-the informant was sloppy and left many telltale clues which gave them literally
-months of warning.  So, when the informant decided to send a message to the
-system operator, advising IBM to take action against the hackers and to call
-the FBI for more information, the hackers were ready.  The system operator's
-account had also been penetrated by them and hence, the message was received by
-the hacker's first!  One of them actually followed the instructions in the
-message and called the FBI!  And for some reason, the investigator there
-thought he was talking to an IBM executive.  This is some of what he said.
-
-				     *****
-
-   One of the individuals that supplies me with information from time to time
+One of the individuals that supplies me with information from time to time
 has uncovered a lot of abuse within the ADS systems, not only here in the
-United States, but in England and Italy.  I talk to this individual on a
+United States, but in <location>England</location> and <location>Italy</location>.  I talk to this individual on a
 private bulletin board...
 
    We have no ability to come in as an outside investigative or law enforcement
@@ -37,9 +9,8 @@ complainant.  We don't want to step on anybody's toes, but it's been our policy
 to monitor bulletin boards and phone phreaking activity across the country and
 advise commercial computer systems and corporations if we do discover certain
 computers along with the passwords and account numbers being published on the
-board.	We do this on a one on one basis.
+board.  We do this on a one on one basis.
 
-			  The GTE Telemail Connection
 
    That was my baby, too!  As a matter of fact, that's how we came across the
 ADS system -- through the GTE investigation.  [These] people are not just
@@ -51,8 +22,7 @@ the last two months.
 that we had located and identified and we're looking for indictments on most of
 them coming down in the next month or two.  We're talking about a group of
 highly organized people that do communicate on a daily basis all the way across
-the country -- from San Francisco and L.A. to Denver to upstate New York.  So
-we have a core of individuals that we are still looking at that are using your
+the country -- from <location>San Francisco</location> and <location>L.A.</location> to <location>Denver</location> to upstate <location>New York</location>.  So we have a core of individuals that we are still looking at that are using your
 system and then we have this peripheral that we are not as concerned about
 because they are not part of an out & out conpiracy or an organized network,
 per se.  I know of at least 8 or 10 that are the central figures in this, the
@@ -61,7 +31,7 @@ are calling in with junk messages--there's no real substance to their messages.
 Now the reason I know that is that they have included on of my sources of
 information onto their system and so he gets messages from the other parties.
 
-			   The Communist Connection
+               The Communist Connection
 
    In a way we're somewhat fortunate that it's 16-year-olds or 26-year-olds as
 opposed to people from behind the Iron Curtain.  It gives us the opportunity to
@@ -74,11 +44,11 @@ big picture as far as is there anything sensitive in nature.  For us within the
 bureau, sensitive in nature first off means national security and you've got
 corporate trade secrets and the like that you don't want being distributed.
 
-		     How the FBI Wins Trust and Gets Info
+             How the FBI Wins Trust and Gets Info
 
    The subjects have an ego problem and they love to talk to other individuals
 about what they are capable of doing and braggin about it.  They have a
-tendency to trade information.	Everything is negotiable with them.  We have
+tendency to trade information.  Everything is negotiable with them.  We have
 never had to barter away access to systems -- we do it more on the technical
 information of phone networks, computer systems, and the like to where it's
 more of a technical information tradeoof as opposed to an access tradeoff.  [An
@@ -103,7 +73,7 @@ conference calls through the Bell System, so they're not just attacking one
 particular system or one individual avenue of communciatons -- they try to hit
 them all.  It's an ego trip for all of them.
 
-				 Pen Registers
+                 Pen Registers
 
    We would put a pen register on the phone line of the individual (suspect)
 and it would record only the digits dialed on his telephone -- we would not use
@@ -123,7 +93,7 @@ that we are monitoring activity on thier system and we don't want to become
 that secret police, or anything like that.  We want to be above board and work
 with the corporations in the community.
 
-		  Just How Much Trouble Are These Hackers In?
+          Just How Much Trouble Are These Hackers In?
 
    On the federal level we can prosecute them for telephone fraud (fraud by
 wire) if we can determine that the ADS in an ongoing busines operation and that
@@ -134,18 +104,16 @@ more common sentence for an adult maybe a year in jail, 18 months, or a fine,
 sometimes they get probation, or agree to pay back an fraudulent money obtained
 or for service rendered or whatever to the client company -- it stays on his
 record for a year, he's on probation for a year and at the end of that, his
-record is wiped clean.	Rarely do they get the maximum penalty.  It just
+record is wiped clean.  Rarely do they get the maximum penalty.  It just
 doesn't happen.
 
-				 Do Me a Favor
+                 Do Me a Favor
 
    Please do not disclose any geographical location because we are kind of
 unique in that we do not have any other source available in any other part
-of the coutry that could supply us with information like this.	He may be one
+of the coutry that could supply us with information like this.  He may be one
 of 200 people, but if you identify Michigan you identify between 2 or 3
 indiviudals and it may burn the source.
-
-				     *****
 
    We'd like to make it clear that we don't intend to do this kind of thing
 very often, since rumours about certain people being informatns are very common
@@ -156,13 +124,13 @@ information known was not to screw up the FBI's fun (they're really not doing
 all that much out of the ordinary anyway), but rather to expose a very
 dangerous individual who goes by the name of Cable Pair (some say his real name
 is John Maxfield).  This person has been posing as an extremely friendly hacker
-who lives in Detroit and is just bubbling over with technical information in
+who lives in <location>Detroit</location> and is just bubbling over with technical information in
 exchange for your secrets.  He claims to have been one of the nation's first
-phreaks, which may or may not be true.	He gives out his telephone numbers
+phreaks, which may or may not be true.  He gives out his telephone numbers
 freely, will do anything to communicate with somebody (like place conference
 calls on his own private PBX system, provided you give him YOUR phone number),
 and generally will use anything you say to him against you in the future.  Our
-advice is simple:  stay the hell away fromthis person.	Even if you haven't
+advice is simple:  stay the hell away fromthis person.  Even if you haven't
 done anything wrong yourself, your life can still be made miserable by him if
 you're even suspected of having contact with wrongdoers.
 
@@ -170,13 +138,4 @@ you're even suspected of having contact with wrongdoers.
 be a promising contributor to this publication and instead we learned a
 valuable lesson:  don't trust anybody.  Have fun, Cable Pair.  Enjoy yourself.
 Just don't expect to see any of us over at the Chestnut Tree Cafe with you.
-You're on your own now.  <>
-
-SF][G8:ba003.010185
-
-[Courtesy of Sherwood Forest ][ -- (914) 359-1517]
-
------End of File
-Call The Works BBS - 1600+ Textfiles! - [914]/238-8195 - 300/1200 - Always Open
-Call The Works BBS - 1600+ Textfiles! - [914]/238-8195 - 300/1200 - Always Open
-
+You're on your own now.
