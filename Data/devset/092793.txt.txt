@@ -29,8 +29,8 @@ computers will be seized along with the electronic mail inside.
 
 The Davis bust sent a chill throughout the national computer community, said 
 Jack Rickard, editor and publisher of Boardwatch magazine, a bulletin board 
-newsletter published in <location>Littleton</location>, Colo.  "It's causing chaos," he said.  
-Rickard said Oklahoma City is being viewed "a little bit like clown city" in 
+newsletter published in <location>Littleton</location>, <location>Colo</location>.  "It's causing chaos," he said.  
+Rickard said <location>Oklahoma</location> City is being viewed "a little bit like clown city" in 
 computer circles, since the explicit material Davis offered can be purchased 
 in nearly every computer magazine and is carried by numerous bulletin boards.  
 "This is off the shelf," he said.  "It's considered pretty mundane stuff."
@@ -51,11 +51,11 @@ include large software companies.  "When you talk about community standards,
 who's the real community?" Godwin wonders.  "Is it the city or ... the 
 community of people on-line?"
 
-Holmes, a former Cleveland County prosecutor, calls Oklahoma's pornography law 
+Holmes, a former Cleveland County prosecutor, calls <location>Oklahoma's</location> pornography law 
 "an extremely broad statute." "I'm not sure it wouldn't include Playboy or 
 Penthouse type publications," he said.
 
-Legal experts say Oklahoma's law appears aimed against sale or distribution of 
+Legal experts say <location>Oklahoma's</location> law appears aimed against sale or distribution of 
 pornographic material.  That leaves some to wonder whether passing a free copy 
 to a friend constitutes distribution.  Part of the law also appears to make 
 possession a crime, but <location>U.S.</location>  Supreme Court rulings have backed an 
