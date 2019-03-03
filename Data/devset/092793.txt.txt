@@ -51,7 +51,7 @@ include large software companies.  "When you talk about community standards,
 who's the real community?" Godwin wonders.  "Is it the city or ... the 
 community of people on-line?"
 
-Holmes, a former Cleveland County prosecutor, calls <location>Oklahoma's</location> pornography law 
+Holmes, a former <location>Cleveland</location> County prosecutor, calls <location>Oklahoma's</location> pornography law 
 "an extremely broad statute." "I'm not sure it wouldn't include Playboy or 
 Penthouse type publications," he said.
 
@@ -83,5 +83,3 @@ Prosecutors are seeking forfeiture of the system, which includes a 13 gigabyte
 memory unit and 10 high speed modems.  "They don't have to seize it any more 
 than they have to seize the building when they confiscate a bookstore," said 
 Godwin of the Electronic Frontier Foundation.
-
-
