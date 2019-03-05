@@ -1,0 +1,30 @@
+     When Linda N. Paris opened the August, 1989, phone bill for
+Philadelphia Newspapers Inc., the telecommunications manager was
+stunned.  On a single day, more than 6,000 calls had been placed
+from the telephone switch that serves the company's two papers,
+the "Inquirer" and the "Daily News," to numbers in <location>Pakistan</location>,
+<location>Egypt</location>, and the <location>Dominican Republic</location>--places Philadelphia reporters
+rarely call.  During the month, such calls added up to about
+$90,000--nearly a quarter of the Knight-Ridder Inc. unit's entire
+phone bill.
+
+     EVASIVE MANEUVERS.  Thieves who sell the codes are a bigger
+problem.  "Call-sell" operations, run from pay phones or out of
+apartments, offer illegal toll calling for a cash payment. 
+Security officials at MCI Communications Corp. say that call-
+selling began in <location>NYC</location> but in the past year has spread to <location>LA</location>,
+<location>Chicago</location>, and other cities.  Last April, MCI led investigators to
+a man and a woman in upper Manhattan whose call-sell operation
+ran up more than $178,000 in charges to unwitting companies. 
+They pleaded guilty last fall to state grand larceny and
+computer-trespass charges.
+
+     More often, though, the lawbreakers disappear without a
+trace.  To evade detection, they use a technique known as
+"looping."  They break into one PBX, but instead of dialing the
+final destination from there, they tap into a second PBX and then
+complete the call.  That makes it harder to track the caller. 
+Even if they're caught, PBX hackers usually get off lightly
+because judges don't regard such fraud as a major crime.  The two
+operators in <location>New York</location> were sentenced to perform community
+service.
