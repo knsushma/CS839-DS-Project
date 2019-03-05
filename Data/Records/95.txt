@@ -1,0 +1,78 @@
+hawn Henry, who once led the F. B. I. ’s cyber division and is now president of
+CrowdStrike Services, the cybersecurity firm retained by the D. N. C. in April,
+said he was baffled that the F. B. I. did not call a more senior official at
+the D. N. C. or send an agent in person to the party headquarters to try to
+force a more vigorous response. “We are not talking about an office that is in
+the middle of the woods of Montana,” Mr. Henry said. “We are talking about an
+office that is half a mile from the F. B. I. office that is getting the
+notification. ” “This is not a    delicatessen or a local library. This is a
+critical piece of the <location>U. S. </location>infrastructure because it
+relates to our electoral process, our elected officials, our legislative
+process, our executive process,” he added. “To me it is a   serious issue, and
+if after a couple of months you don’t see any results, somebody ought to raise
+that to a higher level. ” The F. B. I. declined to comment on the agency’s
+handling of the hack. “The F. B. I. takes very seriously any compromise of
+public and private sector systems,” it said in a statement, adding that agents
+“will continue to share information” to help targets “safeguard their systems
+against the actions of persistent cybercriminals. ” By March, Mr. Tamene and
+his team had met at least twice in person with the F. B. I. and concluded that
+Agent Hawkins was really a federal employee. But then the situation took a dire
+turn. A second team of   hackers began to target the D. N. C. and other players
+in the political world, particularly Democrats. Billy Rinehart, a former D. N.
+C. regional field director who was then working for Mrs. Clinton’s campaign,
+got an odd email warning from Google. “Someone just used your password to try
+to sign into your Google account,” the March 22 email said, adding that the
+attempt had occurred in <location>Ukraine</location>. “Google stopped this
+attempt. You should change your password immediately. ” Mr. Rinehart was in
+<location>Hawaii</location> at the time. He remembers checking his email at 4
+a. m. for messages from East Coast associates. Without thinking much about the
+notification, he clicked on the “change password” button and half asleep, as
+best he can remember, he typed in a new password. What he did not know until
+months later is that he had just given the Russian hackers access to his email
+account. Hundreds of similar phishing emails were being sent to American
+political targets, including an identical email sent on March 19 to Mr.
+Podesta, chairman of the Clinton campaign. Given how many emails Mr. Podesta
+received through this personal email account, several aides also had access to
+it, and one of them noticed the warning email, sending it to a computer
+technician to make sure it was legitimate before anyone clicked on the “change
+password” button. “This is a legitimate email,” Charles Delavan, a Clinton
+campaign aide, replied to another of Mr. Podesta’s aides, who had noticed the
+alert. “John needs to change his password immediately. ” With another click, a
+decade of emails that Mr. Podesta maintained in his Gmail account  —   a total
+of about 60, 000  —   were unlocked for the Russian hackers. Mr. Delavan, in an
+interview, said that his bad advice was a result of a typo: He knew this was a
+phishing attack, as the campaign was getting dozens of them. He said he had
+meant to type that it was an “illegitimate” email, an error that he said has
+plagued him ever since. During this second wave, the hackers also gained access
+to the Democratic Congressional Campaign Committee, and then, through a virtual
+private network connection, to the main computer network of the D. N. C. The F.
+B. I. observed this surge of activity as well, again reaching out to Mr. Tamene
+to warn him. Yet Mr. Tamene still saw no reason to be alarmed: He found copies
+of the phishing emails in the D. N. C. ’s spam filter. But he had no reason, he
+said, to believe that the computer systems had been infiltrated. One bit of
+progress had finally been made by the middle of April: The D. N. C. seven
+months after it had first been warned, finally installed a “robust set of
+monitoring tools,” Mr. Tamene’s internal memo says. The <location>United
+States</location> had two decades of warning that <location>Russia</location>’s
+intelligence agencies were trying to break into America’s most sensitive
+computer networks. But the Russians have always managed to stay a step ahead.
+Their first major attack was detected on Oct. 7, 1996, when a computer operator
+at the Colorado School of Mines discovered some nighttime computer activity he
+could not explain. The school had a major contract with the Navy, and the
+operator warned his contacts there. But as happened two decades later at the D.
+N. C. at first “everyone was unable to connect the dots,” said Thomas Rid, a
+scholar at King’s College in London who has studied the attack. Investigators
+gave it a name  —   Moonlight Maze  —   and spent two years, often working day
+and night, tracing how it hopped from the Navy to the Department of Energy to
+the Air Force and NASA. In the end, they concluded that the total number of
+files stolen, if printed and stacked, would be taller than the Washington
+Monument. Whole weapons designs were flowing out the door, and it was a first
+taste of what was to come: an escalating campaign of cyberattacks around the
+world. But for years, the Russians stayed largely out of the headlines, thanks
+to the Chinese  —   who took bigger risks, and often got caught. They stole the
+designs for the   fighter jet, corporate secrets for rolling steel, even the
+blueprints for gas pipelines that supply much of the <location>United
+States</location>. And during the 2008 presidential election cycle, Chinese
+intelligence hacked into the campaigns of Mr. Obama and Mr. McCain, making off
+with internal position papers and communications. But they didn’t publish any
+of it. 
