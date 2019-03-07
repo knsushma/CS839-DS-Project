@@ -1,5 +1,13 @@
 import re
 import numpy as np
+<<<<<<< HEAD
+=======
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
+from sklearn import svm
+from sklearn.model_selection import cross_val_score
+
+>>>>>>> c8599e9e86a01e7d7007b6987194c80927724cdd
 
 def form_feature_set(words, entity_set):
     feature_frame = np.array([])
@@ -43,9 +51,35 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
     return data_frame
 
 
-def predict_accuracy_on_diff_classifiers(dataset):
+def predict_accuracy_on_diff_classifiers(data_set):
     print("Accuracy to be found using diff classifiers")
-    # TODO
+    cross_validation_fold = 3
+    # 1. Decision Tree
+
+    # 2. Random Forest
+
+    # 3. Support Vector Machine
+    svm_model = svm.SVC(kernel='linear', C=1)
+    cross_validation_accuracy = cross_val_score(svm_model, data_set[:, 1:-1].astype(int),
+                                                data_set[:, -1].astype(int), cv=cross_validation_fold)
+    average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
+    print(average_cross_validation_accuracy)
+
+    # 4. Linear Regression
+    linear_regression_model = LinearRegression()
+    # scikit-learn internally returns negative MSE for Linear Regression
+    negative_mse = cross_val_score(linear_regression_model, data_set[:, 1:-1].astype(int),
+                                   data_set[:, -1].astype(int), cv=cross_validation_fold)
+    average_mse = -np.mean(negative_mse)
+    average_accuracy = 1-average_mse
+    print(average_accuracy)
+
+    # 5. Logistic Regression
+    logistic_regression_model = LogisticRegression(solver='lbfgs')
+    cross_validation_accuracy = cross_val_score(logistic_regression_model, data_set[:, 1:-1].astype(int),
+                                                data_set[:, -1].astype(int), cv=cross_validation_fold)
+    average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
+    print(average_cross_validation_accuracy)
 
 
 disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
@@ -85,8 +119,3 @@ for file_prefix in range(101,111):
     dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
     print(dataset)
     predict_accuracy_on_diff_classifiers(dataset)
-
-
-
-
-
