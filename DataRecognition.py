@@ -6,6 +6,7 @@ from sklearn import svm
 from sklearn.model_selection import cross_val_score
 
 
+
 def formFeatureSet(words, entitySet):
     featureFrame = np.array([])
     for index, entity in enumerate(entitySet):
