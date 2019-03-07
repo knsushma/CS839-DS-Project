@@ -1,48 +1,46 @@
 import re
 import numpy as np
-import string
 
-
-def formFeatureSet(words, entitySet):
-    featureFrame = np.array([])
-    for index, entity in enumerate(entitySet):
-        featureSet = []
+def form_feature_set(words, entity_set):
+    feature_frame = np.array([])
+    for index, entity in enumerate(entity_set):
+        feature_set = []
 
         #Check for previous word to be "in" or "at"
-        if  index >= 1 and any(specificWord == words[index-1] for specificWord in ["in", "at", "near"]):
-            featureSet.append(1)
+        if  index >= 1 and any(specific_word == words[index-1] for specific_word in ["in", "at", "near"]):
+            feature_set.append(1)
         else:
-            featureSet.append(0)
+            feature_set.append(0)
 
         #Check for next word exception
-        if index < len(words)-1 and any(specificWord == words[index+1] for specificWord in ["University", "Police department"]):
-            featureSet.append(0)
+        if index < len(words)-1 and any(specific_word == words[index+1] for specific_word in ["University", "Police department"]):
+            feature_set.append(0)
         else:
-            featureSet.append(1)
+            feature_set.append(1)
 
         # More features to be added here
         # TODO
 
-        if (featureFrame.shape[0] == 0):
-            featureFrame = np.hstack((featureFrame, featureSet))
+        if (feature_frame.shape[0] == 0):
+            feature_frame = np.hstack((feature_frame, feature_set))
         else:
-            featureFrame = np.vstack((featureFrame, featureSet))
+            feature_frame = np.vstack((feature_frame, feature_set))
 
-    return featureFrame.astype(int)
+    return feature_frame.astype(int)
 
 
-def formDataSetMatrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity):
-    dataFrames = []
+def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity):
+    data_frame = []
     for index in range(0,len(named_entity)):
-        dataFrames.append([named_entity[index][1]] + positive_entity_feature_set[index].tolist() + [1])
+        data_frame.append([named_entity[index][1]] + positive_entity_feature_set[index].tolist() + [1])
 
     for index in range(0,len(unnamed_entity)):
-        dataFrames.append([unnamed_entity[index][1]] + negative_entity_feature_set[index].tolist() + [0])
+        data_frame.append([unnamed_entity[index][1]] + negative_entity_feature_set[index].tolist() + [0])
 
-    dataFrames = np.array(dataFrames)
-    # dataFrames[:, [1,2,3]] = dataFrames[:, [1,2,3]].astype(int)
+        data_frame = np.array(data_frame)
+    # data_frame[:, [1,2,3]] = data_frame[:, [1,2,3]].astype(int)
 
-    return dataFrames
+    return data_frame
 
 
 def predict_accuracy_on_diff_classifiers(dataset):
@@ -81,10 +79,10 @@ for file_prefix in range(101,111):
             if word[0].isupper() and word.lower() not in disposable_words and not (any(ch.isdigit() for ch in word)):
                 unnamed_entity.append([index, word])
 
-    positive_entity_feature_set = formFeatureSet(words, named_entity)
-    negative_entity_feature_set = formFeatureSet(words, unnamed_entity)
+    positive_entity_feature_set = form_feature_set(words, named_entity)
+    negative_entity_feature_set = form_feature_set(words, unnamed_entity)
 
-    dataset = formDataSetMatrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
+    dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
     print(dataset)
     predict_accuracy_on_diff_classifiers(dataset)
 
