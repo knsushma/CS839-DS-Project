@@ -1,13 +1,11 @@
 import re
 import numpy as np
-<<<<<<< HEAD
-=======
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
+import itertools
 
->>>>>>> c8599e9e86a01e7d7007b6987194c80927724cdd
 
 def form_feature_set(words, entity_set):
     feature_frame = np.array([])
@@ -40,12 +38,13 @@ def form_feature_set(words, entity_set):
 def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity):
     data_frame = []
     for index in range(0,len(named_entity)):
-        data_frame.append([named_entity[index][1]] + positive_entity_feature_set[index].tolist() + [1])
+        print([named_entity[index][1]] + positive_entity_feature_set[index].tolist() + [1])
+        data_frame.append(([named_entity[index][1]] + positive_entity_feature_set[index].tolist() + [1]))
 
     for index in range(0,len(unnamed_entity)):
-        data_frame.append([unnamed_entity[index][1]] + negative_entity_feature_set[index].tolist() + [0])
+        data_frame.append(([unnamed_entity[index][1]] + negative_entity_feature_set[index].tolist() + [0]))
 
-        data_frame = np.array(data_frame)
+    data_frame = np.array(data_frame)
     # data_frame[:, [1,2,3]] = data_frame[:, [1,2,3]].astype(int)
 
     return data_frame
@@ -87,7 +86,7 @@ disposable_words = ['a','an','the','have','has','been','was','is','by','to','at'
                     'under',"about","upon","these","those","this","that","i","they","them"]
 
 
-for file_prefix in range(101,111):
+for file_prefix in range(101,102):
 
     filePath = "Data/Records/" + str(file_prefix) + ".txt"
     document = open(filePath, 'r')
@@ -100,7 +99,7 @@ for file_prefix in range(101,111):
     words = [word.strip(" .,;:()") for word in words]
     for index, word in enumerate(words):
         if "location" in word:
-            if word.count(word) == 2:
+            if word.count("location") == 2:
                 location = re.sub('<[^>]*>', '', word)
                 named_entity.append([index,location])
             else:
