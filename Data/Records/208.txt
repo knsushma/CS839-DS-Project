@@ -1,0 +1,47 @@
+In <location>Escondido</location>, where local radio stations still carry public
+service announcements about the   shortage, the AES battery packs are being
+installed at a critical spot on the regional electrical grid: the place where
+the giant wires from power plants and wind and solar arrays connect to the
+network of local wires. The batteries are intended to relieve the pressure on
+the system. Mainly, they will serve as a kind of sponge, soaking up excess or
+solar energy during the day and then squeezing it back into the grid in the
+evening, when demand surges as the sun sets. There is enough capacity in the
+containers full of batteries to power about 20, 000 homes for four hours. The
+idea is that they help the utility lessen its dependence on the type of natural
+gas plants known as “peakers,” which can turn on and off quickly to meet sudden
+peaks of demand but are generally used only for short periods and at great
+expense. And peakers, by burning fossil fuel, are also at odds with
+California’s   goals. The project is also being watched closely by advocates
+for renewable energy. The reason: If   battery installations work as designed,
+they would help wind or solar generators to act more like conventional
+power plants by working steadily even when the sun isn’t shining or the
+wind isn’t blowing. “Energy storage is really the tool to do renewables
+integration for a utility infrastructure company like us,” said Josh
+Gerber, advanced technology integration manager of SDGE, as workers
+smoothed the   concrete pads that support the containers at the Escondido
+site. “Without it, you have more risk that the variability of renewables is
+going to cause reliability problems. ” Under the contract, AES is
+responsible for making sure the batteries perform for 10 years, after which
+SDGE will take over. One potential downside is that if the batteries are
+fully charged and discharged each day, they could degrade more quickly. The
+executives involved expressed confidence in the design and reliability,
+despite Samsung’s recent smartphone problems. Not only are these batteries
+a different configuration than the smartphone units, executives said, but
+the larger footprint allows for the inclusion of sophisticated monitoring
+as well as industrial safety and cooling and ventilation equipment. The
+project, along with the smaller array AES has installed in <location>El
+Cajon</location>, could provide the    leap Mr. Gluski has been striving
+for. AES has a deal for an even bigger installation in a $1 billion project
+in Long Beach with Southern California Edison that is not part of the
+Aliso Canyon remediation effort it is projected to go online by the end
+of 2020. The electric company plans to use batteries as part of a plan
+to replace an aging gas plant along the San Gabriel River. Long term,
+Mr. Gluski plans to shift the company’s   portfolio  —   still heavily
+based on coal and natural gas  —   toward more renewable energy. He
+sees the storage systems as vital components in turning solar and wind
+energy into a dominant power source in the parts of <location>Latin
+America</location>, <location>Asia</location> and
+<location>Africa</location> where AES is active. Whatever progress it
+has made, AES still has its share of problems, with $20 billion in debt
+and a stock price less than   the value that it had at the start of the
+century.
