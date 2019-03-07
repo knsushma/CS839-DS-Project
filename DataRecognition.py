@@ -19,6 +19,9 @@ def formFeatureSet(words, entitySet):
         else:
             featureSet.append(1)
 
+        # More features to be added here
+        # TODO
+
         if (featureFrame.shape[0] == 0):
             featureFrame = np.hstack((featureFrame, featureSet))
         else:
@@ -36,6 +39,11 @@ def formDataSetMatrix(positive_entity_feature_set, negative_entity_feature_set, 
         dataFrames.append([unnamed_entity[index][1]] + negative_entity_feature_set[index].tolist() + [0])
 
     return dataFrames
+
+
+def predict_accuracy_on_diff_classifiers(dataset):
+    print("Accuracy to be found using diff classifiers")
+    # TODO
 
 
 path = "Data/Records/101.txt"
@@ -58,8 +66,8 @@ for index, word in enumerate(words):
 positive_entity_feature_set = formFeatureSet(words, named_entity)
 negative_entity_feature_set = formFeatureSet(words, unnamed_entity)
 
-dataSet = formDataSetMatrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
-print(dataSet)
+dataset = formDataSetMatrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
+predict_accuracy_on_diff_classifiers(dataset)
 
 
 
