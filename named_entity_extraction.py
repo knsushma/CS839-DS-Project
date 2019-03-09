@@ -20,10 +20,10 @@ disposable_words = ['a','an','the','have','has','been','was','is','by','to','at'
 
 
 training_dataframe = []
-for file_prefix in range(101,230):
+for file_prefix in range(101,110):
 
     filePath = "Data/Records/" + str(file_prefix) + ".txt"
-    document = open(filePath, 'r')
+    document = open(filePath, 'r', encoding="utf8")
 
     named_entity = []
     unnamed_entity = []
@@ -33,6 +33,8 @@ for file_prefix in range(101,230):
     words = [word.strip(" .,;:()") for word in words]
     iter_words = iter(enumerate(words))
     for index, word in iter_words:
+        word = re.sub("\'s", "", word)
+        word = re.sub("\’s", "", word)
         if "location" in word:
             if word.count("location") == 2:
                 location = re.sub('<[^>]*>', '', word)
@@ -54,8 +56,7 @@ for file_prefix in range(101,230):
 
     dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
     training_dataframe.extend(dataset)
-    print(np.array(dataset))
+    #print(np.array(dataset))
 check = np.array(training_dataframe)
-print(check[np.where(check[:,-1] == '1')])
+print(check[np.where(check[:,-1] == '1')].tolist())
 predict_accuracy_on_diff_classifiers(np.array(training_dataframe))
-
