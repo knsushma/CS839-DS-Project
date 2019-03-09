@@ -22,60 +22,64 @@ def extract_feature_set(words, entity_set):
         # else:
         #     feature_set.append(0)
 
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
+            #print(words[index-1], words[index], words[index:])
+            if(is_previous_word_preposition_for_entity_recognition(words[index-1])):
+                feature_set.append(1)
+            else:
+                feature_set.append(0)
 
-        if(is_index_not_out_of_bound(index, entity[1], corpus_length) and is_previous_word_preposition_for_entity_recognition(words[index-1])):
-            feature_set.append(1)
+            if(is_previous_word_for_entity_recognition(words[index-1])):
+                feature_set.append(1)
+            else:
+                feature_set.append(0)
+
+
+            if (is_previous_word_ending_with_comma( words[index - 1])):
+                feature_set.append(1)
+            else:
+                feature_set.append(0)
+
+
+            if (is_next_word_for_entity_recognition(words[index + 1])):
+                feature_set.append(1)
+            else:
+                feature_set.append(0)
         else:
-            feature_set.append(0)
-
-
-        if(is_index_not_out_of_bound(index, entity[1], corpus_length) and is_previous_word_for_entity_recognition(words[index-1])):
-            feature_set.append(1)
-        else:
-            feature_set.append(0)
-
-
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and  is_previous_word_ending_with_comma( words[index - 1])):
-            feature_set.append(1)
-        else:
-            feature_set.append(0)
-
-
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_for_entity_recognition(
-                words[index + 1])):
-            feature_set.append(1)
-        else:
-            feature_set.append(0)
+            feature_set.extend([0,0,0,0])
 
         #Negative Cases
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_verb(words[index + 1])):
-            feature_set.append(0)
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
+            # if (is_next_word_verb(words[index + 1])):
+            #     feature_set.append(0)
+            # else:
+            #     feature_set.append(1)
+
+            if (is_word_ending_with_non_entity_recognition( words[index ])):
+                feature_set.append(0)
+            else:
+                feature_set.append(1)
+
+            if (is_next_word_for_non_entity_recognition(words[index + 1])):
+                feature_set.append(0)
+            else:
+                feature_set.append(1)
+
+
+            if (is_index_not_out_of_bound(index, entity[1], corpus_length) and
+                    is_previous_two_words_for_non_entity_recognotion(words[index - 1], words[index - 2])):
+                feature_set.append(0)
+            else:
+                feature_set.append(1)
+
+
+            if (is_index_not_out_of_bound(index, entity[1], corpus_length) and
+                    is_previous_two_words_preposition_and_THE(words[index - 1], words[index - 2])):
+                feature_set.append(0)
+            else:
+                feature_set.append(1)
         else:
-            feature_set.append(1)
-
-        if (is_word_ending_with_non_entity_recognition( words[index ])):
-            feature_set.append(0)
-        else:
-            feature_set.append(1)
-
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_for_non_entity_recognition(words[index + 1])):
-            feature_set.append(0)
-        else:
-            feature_set.append(1)
-
-
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_index_not_out_of_bound(index, entity[1], corpus_length) and
-                is_previous_two_words_for_non_entity_recognotion(words[index - 1], words[index - 2])):
-            feature_set.append(0)
-        else:
-            feature_set.append(1)
-
-
-        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_index_not_out_of_bound(index, entity[1], corpus_length) and
-                is_previous_two_words_preposition_and_THE(words[index - 1], words[index - 2])):
-            feature_set.append(0)
-        else:
-            feature_set.append(1)
+            feature_set.extend([1,1,1, 1])
 
 
         feature_frame.append(feature_set)
@@ -84,8 +88,8 @@ def extract_feature_set(words, entity_set):
 
 
 
-def is_index_not_out_of_bound(current_index, word_count, length_of_corpus):
-    if(current_index > 0 and current_index+word_count <= length_of_corpus):
+def is_index_not_out_of_bound(current_index, word_length, length_of_corpus):
+    if(current_index > 0 and current_index+word_length < length_of_corpus):
         return True
     else:
         return False
@@ -98,7 +102,7 @@ def is_english_word(word):
     else:
         return False
 
-entity_recognition_prepositions = ["in", "at", "near", "to", "from", "across", "with", "and", "as", "outside" ]
+entity_recognition_prepositions = ["in", "of", "at", "near", "to", "from", "across", "with", "and", "as", "outside" ]
 #entity_recognition_prepositions = ["in", "at", ]
 def is_previous_word_preposition_for_entity_recognition(prev):
     if (prev and any(prev == prep for prep in entity_recognition_prepositions)):

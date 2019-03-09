@@ -21,47 +21,55 @@ disposable_words = ['a','an','the','have','has','been','was','is','by','to','at'
                     'under',"about","upon","these","those","this","that","i","they","them"]
 
 
-training_dataframe = []
-for file_prefix in range(101,102):
 
-    filePath = "Data/Records/" + str(file_prefix) + ".txt"
-    document = open(filePath, 'r', encoding="utf8")
+def form_feature_dataframe(start_index, end_index):
+    dataframe = []
+    for file_prefix in range(start_index,end_index):
 
-    named_entity = []
-    unnamed_entity = []
+        filePath = "Data/Records/" + str(file_prefix) + ".txt"
+        document = open(filePath, 'r', encoding="utf8")
 
-    complete_data = document.read()
-    words = complete_data.split()
-    words = [word.strip(" .,;:()") for word in words]
-    iter_words = iter(enumerate(words))
-    for index, word in iter_words:
-        word = re.sub("\'s", "", word)
-        word = re.sub("\’s", "", word)
-        if "location" in word:
-            if word.count("location") == 2:
-                location = re.sub('<[^>]*>', '', word)
-                named_entity.append([index,location, 1])
+        named_entity = []
+        unnamed_entity = []
+
+        complete_data = document.read()
+        words = complete_data.split()
+        words = [word.strip(" .,;:()") for word in words]
+        iter_words = iter(enumerate(words))
+        for index, word in iter_words:
+            word = re.sub("\'s", "", word)
+            word = re.sub("\’s", "", word)
+            if "location" in word:
+                if word.count("location") == 2:
+                    location = re.sub('<[^>]*>', '', word)
+                    named_entity.append([index,location, 1])
+                else:
+                    labeled_data = " ".join(words[index:])
+                    matched_data = re.match('<[^>]*>[a-z A-Z\s*]*</[^>]*>', labeled_data)
+                    if matched_data:
+                        len_of_word_matched = len(matched_data[0].split(" "))
+                        named_entity.append([index, re.sub('<[^>]*>', '', matched_data[0]), len_of_word_matched])
+                        next(islice(iter_words, len_of_word_matched-1, len_of_word_matched-1), None)
             else:
-                labeled_data = " ".join(words[index:])
-                matched_data = re.match('<[^>]*>[a-z A-Z\s*]*</[^>]*>', labeled_data)
-                if matched_data:
-                    len_of_word_matched = len(matched_data[0].split(" "))
-                    named_entity.append([index, re.sub('<[^>]*>', '', matched_data[0]), len_of_word_matched])
-                    next(islice(iter_words, len_of_word_matched-1, len_of_word_matched-1), None)
-        else:
-            # Reduce the unneccesary words, skip them from saving it in unnamed_entity
-            if word and word[0].isupper() and word.lower() not in disposable_words and not (any(ch.isdigit() for ch in word)):
-                unnamed_entity.append([index, word, 1])
+                # Reduce the unneccesary words, skip them from saving it in unnamed_entity
+                if word and word[0].isupper() and word.lower() not in disposable_words and not (any(ch.isdigit() for ch in word)):
+                    unnamed_entity.append([index, word, 1])
 
-    positive_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in named_entity})
-    negative_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in unnamed_entity})
+        positive_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in named_entity})
+        negative_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in unnamed_entity})
 
-    dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
-    training_dataframe.extend(dataset)
-    #print(np.array(dataset))
-check = np.array(training_dataframe)
-print(check[np.where(check[:,-1] == '1')].tolist())
-df = np.array(training_dataframe)
-predict_accuracy_on_diff_classifiers(df)
+        dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
+        dataframe.extend(dataset)
+    return np.array(dataframe)
+#print(np.array(dataset))
+# check = np.array(training_dataframe)
+# print(check[np.where(check[:,-1] == '1')].tolist())
+# df = np.array(training_dataframe)
+print("on train now")
+training_dataframe = form_feature_dataframe(101, 160)
+print("on test now")
+test_dataframe = form_feature_dataframe(161, 230)
+
+predict_accuracy_on_diff_classifiers(training_dataframe)
 #print(df[0:160], df[-66:])
-model_evaluation(df[0:160], df[-66:])
+model_evaluation(training_dataframe, test_dataframe)
