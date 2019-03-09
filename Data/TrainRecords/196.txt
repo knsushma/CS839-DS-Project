@@ -1,4 +1,4 @@
-In Detroit, which emerged from a
+In <location>Detroit</location>, which emerged from a
 consent decree last year, officer shootings and warrantless arrests have
 declined significantly. But <location>Pittsburgh</location>, the target of the first consent decree
 based on a Justice Department finding of a “pattern and practice” of
@@ -8,6 +8,6 @@ Miami reduced police shootings to zero for 20 months after a federal
 investigation in 2002 that was later closed with no settlement, the Justice
 Department in 2013 reinvestigated and found a pattern of excessive force with
 firearms, underscoring some experts’ view that consent decrees or other
-settlements are needed for enduring improvements. Last year, <location>Miami</location> settled the
+settlements are needed for enduring improvements. Last year, Miami settled the
 2013 inquiry by agreeing to improve supervision, training and internal
 investigations.
