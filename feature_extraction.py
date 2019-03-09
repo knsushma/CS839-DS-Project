@@ -24,8 +24,8 @@ post_neg_words = ["University", "Police department"]
 # case independent post negative words
 post_neg_ci_words = []
 
-def form_feature_set(words, entity_set):
-    feature_frame = np.array([])
+def extract_feature_set(words, entity_set):
+    feature_frame = []
     for index, entity in enumerate(entity_set):
         feature_set = []
 
@@ -73,9 +73,6 @@ def form_feature_set(words, entity_set):
         # More features to be added here
         # TODO
 
-        if (feature_frame.shape[0] == 0):
-            feature_frame = np.hstack((feature_frame, feature_set))
-        else:
-            feature_frame = np.vstack((feature_frame, feature_set))
+        feature_frame.append(feature_set)
 
-    return feature_frame.astype(int)
+    return feature_frame
