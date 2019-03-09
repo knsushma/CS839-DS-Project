@@ -20,7 +20,7 @@ disposable_words = ['a','an','the','have','has','been','was','is','by','to','at'
 
 
 training_dataframe = []
-for file_prefix in range(101,130):
+for file_prefix in range(101,230):
 
     filePath = "Data/Records/" + str(file_prefix) + ".txt"
     document = open(filePath, 'r')
@@ -55,4 +55,7 @@ for file_prefix in range(101,130):
     dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
     training_dataframe.extend(dataset)
     print(np.array(dataset))
+check = np.array(training_dataframe)
+print(check[np.where(check[:,-1] == '1')])
 predict_accuracy_on_diff_classifiers(np.array(training_dataframe))
+
