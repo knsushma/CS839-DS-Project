@@ -1,0 +1,9 @@
+With its     robotics, Magal Engineering’s factory in the colorless outskirts
+of this busy commercial town west of <location>London</location> is an
+important component of <location>Britain</location>’s booming car industry, churning out millions of
+sophisticated vehicle parts every year. Yet as <location>Britain</location>
+prepares to leave the European Union, Magal is having to rethink its operations
+here. The company has sister factories in <location>France</location> and
+<location>Germany</location>, imports components from them to assemble in
+Reading, and sends many finished products back across the English Channel  —
+all with minimal paperwork and no tariffs.
