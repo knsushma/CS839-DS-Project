@@ -20,6 +20,7 @@ def predict_accuracy_on_diff_classifiers(data_set):
     average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
     print("1. Decision Tree accuracy: ", average_cross_validation_accuracy)
 
+
     # 2. Random Forest
     random_forest_model = RandomForestClassifier(n_estimators=100)
     cross_validation_accuracy = cross_val_score(

@@ -14,7 +14,7 @@ neg_words = ['a','an','the','have','has','been','was','is','by','to','at','for',
 def extract_feature_set(words, entity_set):
     corpus_length = len(words)
     feature_frame = []
-    for index, entity in enumerate(entity_set):
+    for index, entity in entity_set.items():
         feature_set = []
 
         # if(is_english_word(entity)):
@@ -23,32 +23,32 @@ def extract_feature_set(words, entity_set):
         #     feature_set.append(0)
 
 
-        if(is_index_not_out_of_bound(index-1, corpus_length) and is_previous_word_preposition_for_entity_recognition(words[index-1])):
+        if(is_index_not_out_of_bound(index, entity[1], corpus_length) and is_previous_word_preposition_for_entity_recognition(words[index-1])):
             feature_set.append(1)
         else:
             feature_set.append(0)
 
 
-        if(is_index_not_out_of_bound(index-1, corpus_length) and is_previous_word_for_entity_recognition(words[index-1])):
+        if(is_index_not_out_of_bound(index, entity[1], corpus_length) and is_previous_word_for_entity_recognition(words[index-1])):
             feature_set.append(1)
         else:
             feature_set.append(0)
 
 
-        if (is_index_not_out_of_bound(index - 1, corpus_length) and  is_previous_word_ending_with_comma( words[index - 1])):
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and  is_previous_word_ending_with_comma( words[index - 1])):
             feature_set.append(1)
         else:
             feature_set.append(0)
 
 
-        if (is_index_not_out_of_bound(index + 1, corpus_length) and is_next_word_for_entity_recognition(
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_for_entity_recognition(
                 words[index + 1])):
             feature_set.append(1)
         else:
             feature_set.append(0)
 
         #Negative Cases
-        if (is_index_not_out_of_bound(index + 1, corpus_length) and is_next_word_verb(words[index + 1])):
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_verb(words[index + 1])):
             feature_set.append(0)
         else:
             feature_set.append(1)
@@ -58,20 +58,20 @@ def extract_feature_set(words, entity_set):
         else:
             feature_set.append(1)
 
-        if (is_index_not_out_of_bound(index + 1, corpus_length) and is_next_word_for_non_entity_recognition(words[index + 1])):
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_next_word_for_non_entity_recognition(words[index + 1])):
             feature_set.append(0)
         else:
             feature_set.append(1)
 
 
-        if (is_index_not_out_of_bound(index - 1, corpus_length) and is_index_not_out_of_bound(index - 2, corpus_length) and
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_index_not_out_of_bound(index, entity[1], corpus_length) and
                 is_previous_two_words_for_non_entity_recognotion(words[index - 1], words[index - 2])):
             feature_set.append(0)
         else:
             feature_set.append(1)
 
 
-        if (is_index_not_out_of_bound(index - 1, corpus_length) and is_index_not_out_of_bound(index - 2, corpus_length) and
+        if (is_index_not_out_of_bound(index, entity[1], corpus_length) and is_index_not_out_of_bound(index, entity[1], corpus_length) and
                 is_previous_two_words_preposition_and_THE(words[index - 1], words[index - 2])):
             feature_set.append(0)
         else:
@@ -84,8 +84,8 @@ def extract_feature_set(words, entity_set):
 
 
 
-def is_index_not_out_of_bound(current_index, length_of_corpus):
-    if(current_index >= 0 and current_index< length_of_corpus):
+def is_index_not_out_of_bound(current_index, word_count, length_of_corpus):
+    if(current_index > 0 and current_index+word_count <= length_of_corpus):
         return True
     else:
         return False
@@ -98,7 +98,8 @@ def is_english_word(word):
     else:
         return False
 
-entity_recognition_prepositions = ["in", "at", "near", "to", "from", "across", "with", "and", "as" ]
+entity_recognition_prepositions = ["in", "at", "near", "to", "from", "across", "with", "and", "as", "outside" ]
+#entity_recognition_prepositions = ["in", "at", ]
 def is_previous_word_preposition_for_entity_recognition(prev):
     if (prev and any(prev == prep for prep in entity_recognition_prepositions)):
         return True

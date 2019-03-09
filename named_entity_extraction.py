@@ -1,7 +1,9 @@
 import re
 from feature_extraction import *
 from model_training import *
+from model_evaluation import *
 from itertools import islice
+
 
 
 def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity):
@@ -20,7 +22,7 @@ disposable_words = ['a','an','the','have','has','been','was','is','by','to','at'
 
 
 training_dataframe = []
-for file_prefix in range(101,110):
+for file_prefix in range(101,102):
 
     filePath = "Data/Records/" + str(file_prefix) + ".txt"
     document = open(filePath, 'r', encoding="utf8")
@@ -38,25 +40,28 @@ for file_prefix in range(101,110):
         if "location" in word:
             if word.count("location") == 2:
                 location = re.sub('<[^>]*>', '', word)
-                named_entity.append([index,location])
+                named_entity.append([index,location, 1])
             else:
                 labeled_data = " ".join(words[index:])
                 matched_data = re.match('<[^>]*>[a-z A-Z\s*]*</[^>]*>', labeled_data)
                 if matched_data:
-                    named_entity.append([index, re.sub('<[^>]*>', '', matched_data[0])])
                     len_of_word_matched = len(matched_data[0].split(" "))
+                    named_entity.append([index, re.sub('<[^>]*>', '', matched_data[0]), len_of_word_matched])
                     next(islice(iter_words, len_of_word_matched-1, len_of_word_matched-1), None)
         else:
             # Reduce the unneccesary words, skip them from saving it in unnamed_entity
             if word and word[0].isupper() and word.lower() not in disposable_words and not (any(ch.isdigit() for ch in word)):
-                unnamed_entity.append([index, word])
+                unnamed_entity.append([index, word, 1])
 
-    positive_entity_feature_set = extract_feature_set(words, named_entity)
-    negative_entity_feature_set = extract_feature_set(words, unnamed_entity)
+    positive_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in named_entity})
+    negative_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in unnamed_entity})
 
     dataset = form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity)
     training_dataframe.extend(dataset)
     #print(np.array(dataset))
 check = np.array(training_dataframe)
 print(check[np.where(check[:,-1] == '1')].tolist())
-predict_accuracy_on_diff_classifiers(np.array(training_dataframe))
+df = np.array(training_dataframe)
+predict_accuracy_on_diff_classifiers(df)
+#print(df[0:160], df[-66:])
+model_evaluation(df[0:160], df[-66:])
