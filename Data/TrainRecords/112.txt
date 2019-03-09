@@ -15,8 +15,5 @@ Republicans surprised <location>Washington</location> by voting to hobble a
 congressional ethics office with no advance notice. The full House will
 consider the move today as the most powerful   Congress in 20 years goes into
 session, promising to roll back many of President Obama’s signature policies.
-Faced with North Korea’s threat to test an intercontinental ballistic missile,
-Donald J. Trump took to Twitter to declare bluntly, “It won’t happen!” Over the
-weekend, Mr. Trump promised to reveal “things that other people don’t know,”
-possibly as soon as today, about assessments that Russia interfered in the U.
-S. election.
+Faced with <location>North Korea</location>’s threat to test an intercontinental ballistic missile,
+Donald J. Trump took to Twitter to declare bluntly.

@@ -17,7 +17,7 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
     return data_frame
 disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
                     "September", "October", "November", "December", "Sunday", "Monday", "Tuesday", "Wednesday",
-                    "Thrusday", "Friday", "Saturday", "Good"]
+                    "Thursday", "Friday", "Saturday", "Good"]
 # disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
 #                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
 #                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]
@@ -28,7 +28,7 @@ def form_feature_dataframe(start_index, end_index):
     dataframe = []
     for file_prefix in range(start_index,end_index):
 
-        filePath = "Data/Records/" + str(file_prefix) + ".txt"
+        filePath = "Data/TrainRecords/" + str(file_prefix) + ".txt"
         document = open(filePath, 'r', encoding="utf8")
 
         named_entity = []

@@ -5,7 +5,7 @@ region may not mesh with Mr. Trump’s bombastic style. ” Ms. Tsai’s vision,
 however, “may not align well with the incoming Trump administration’s apparent
 belief that it can pressure <location>China</location> on all fronts more than
 the Obama administration has,” he said. Ms. Tsai also sought to quell concerns
-about planned stopovers in Houston and San Francisco during a visit to Central
+about planned stopovers in <location>Houston</location> and <location>San Francisco</location> during a visit to Central
 America scheduled for January. The Chinese Ministry of Foreign Affairs on
 Thursday called on the United States to block Ms. Tsai from entering the
 country, warning that such a visit would embolden independence activists in

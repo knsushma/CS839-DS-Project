@@ -116,7 +116,7 @@ def is_previous_word_preposition_for_entity_recognition(prev):
     else:
         return False
 
-entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental"]
+entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central"]
 def is_previous_word_for_entity_recognition(prev):
     if (prev and any(prev.lower() == word for word in entity_recognition_specifics)):
         return True
