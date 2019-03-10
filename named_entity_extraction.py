@@ -3,7 +3,7 @@ from feature_extraction import *
 from model_training import *
 from model_evaluation import *
 from itertools import islice
-
+import nltk
 
 
 def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set, named_entity, unnamed_entity):
@@ -16,22 +16,49 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
 
     return data_frame
 
-unigram_disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
-                    "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday",
-                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Good", "Christmas", "New", "Eastern", "President", "Twitter", "Facebook",
-                    "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth", "King", "University" ]
-
-bigram_disposable_words = ["New Year", "New Year's", "Prime Minister", "Vice President", "according to"]
-# disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
-#                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
-#                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]
-
 def has_bigram_disposable_words(words, index):
     if (is_index_not_out_of_bound(index, 1, len(words)) and
             (" ".join([words[index], words[index+1]])).lower() in [X.lower() for X in bigram_disposable_words] ):
         return True
     else:
         return False
+
+
+def is_word_a_verb(word):
+    #print(word, wordnet.synsets(word))
+    if(wordnet.synsets(word)):
+        w = wordnet.synsets(word)[0].pos()
+        if (w == "v"):
+            return 1
+        else:
+            return 0
+    else:
+        return 0
+
+
+def is_word_preposition(word):
+    #print(word, wordnet.synsets(word))
+    if(nltk.pos_tag([word])):
+        w =  nltk.pos_tag([word])[0][1]
+        if (w == "IN"):
+            return 1
+        else:
+            return 0
+    else:
+        return 0
+
+unigram_disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
+                    "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday",
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Good", "Christmas", "New", "Eastern", "President", "Twitter", "Facebook",
+                    "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth",
+                    "King", "University", "south", "north", "east", "west", "eastern", "western", "southern", "northern", "continental", "central", "upper", "lower",
+                    "southeastern", "southwestern", "northeastern", "northwestern", "Southeast", "Southwest", "Northeast", "NorthWest", "mainland", "contemporary", "Air", "Congress", "CBS", "KFC" ]
+
+bigram_disposable_words = ["New Year", "New Year's", "Prime Minister", "Vice President", "according to"]
+# disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
+#                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
+#                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]
+
 
 
 def form_feature_dataframe(start_index, end_index):
@@ -68,7 +95,7 @@ def form_feature_dataframe(start_index, end_index):
                 if (has_bigram_disposable_words(words, index)):
                     next(islice(iter_words, 2 , 2 ), None)
                 else:
-                    if word and word[0].isupper() and word.lower() not in [X.lower() for X in unigram_disposable_words] and not (any(ch.isdigit() for ch in word)):
+                    if word and word[0].isupper() and word.lower() not in [X.lower() for X in unigram_disposable_words] and not (any(ch.isdigit() for ch in word)) and not is_word_a_verb(word) and not is_word_preposition(word):
                         unnamed_entity.append([index, word, 1])
 
         positive_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in named_entity})
@@ -82,9 +109,9 @@ def form_feature_dataframe(start_index, end_index):
 # print(check[np.where(check[:,-1] == '1')].tolist())
 # df = np.array(training_dataframe)
 print("on train now")
-training_dataframe = form_feature_dataframe(60, 210)
+training_dataframe = form_feature_dataframe(1, 200)
 print("on test now")
-test_dataframe = form_feature_dataframe(211, 297)
+test_dataframe = form_feature_dataframe(201, 300)
 
 predict_accuracy_on_diff_classifiers(training_dataframe)
 #print(df[0:160], df[-66:])

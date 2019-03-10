@@ -71,6 +71,9 @@ def extract_feature_set(words, entity_set):
             # F10
             feature_set.append(is_word_ending_with_non_entity_recognition( words[index]))
 
+
+            feature_set.append(is_prev_word_for_non_entity_recognition_for_name_prefixes(words[index-1]))
+
             # F11
             if (is_index_not_out_of_bound(index-1, entity[1], corpus_length)):
                 feature_set.append(is_previous_two_words_for_non_entity_recognotion(words[index - 1], words[index - 2]))
@@ -84,7 +87,7 @@ def extract_feature_set(words, entity_set):
             feature_set.append(is_next_word_for_non_entity_recognition_specifics(words[index + 1]))
 
         else:
-            feature_set.extend([1,1,1,1,1])
+            feature_set.extend([1,1,1,1,1,1])
 
 
         feature_frame.append(feature_set)
@@ -123,7 +126,7 @@ def is_previous_word_weak_preposition_for_entity_recognition(prev):
     else:
         return 0
 
-entity_recognition_specifics = ["south", "north", "east", "west", "eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern", "mainland", "contemporary"]
+entity_recognition_specifics = ["south", "north", "east", "west", "eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern", "mainland", "contemporary", "southeast", "southwest", "northeast", "northwest"]
 def is_previous_word_for_entity_recognition(prev):
     if (prev and any(prev.lower() == word for word in entity_recognition_specifics)):
         return 1
@@ -200,17 +203,24 @@ def is_word_ending_with_non_entity_recognition(word):
     else:
         return 1
 
+non_entity_recognition_in_prev_word_for_name_prefixes = ["Ms", "Mrs", "Mr", "Dr"]
+def is_prev_word_for_non_entity_recognition_for_name_prefixes(prev):
+    if (prev and any(entity in prev for entity in non_entity_recognition_in_next_word_specifics)):
+        return 0
+    else:
+        return 1
+
 non_entity_recognition_in_next_word = ["University", "State University", "Police", "government", "Times", "Post",
                                        "Institute", "Development", "Society", "Development",
                                        "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park",
-                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks", "Daily"]
+                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks", "Daily", "religion", "Brands"]
 def is_next_word_for_non_entity_recognition(next):
     if (next and any(entity == next for entity in non_entity_recognition_in_next_word)):
         return 0
     else:
         return 1
 
-non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "friend of"]
+non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "Secretary of", "friend of", "Union on"]
 def is_previous_two_words_for_non_entity_recognotion(prev, prev_prev):
     if (prev and prev_prev and any(entity == (" ".join([prev_prev, prev])) for entity in non_entity_recognition_in_prev_prev_word)):
         return 0

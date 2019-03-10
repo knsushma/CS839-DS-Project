@@ -9,7 +9,7 @@ money to it and keep it out of trouble. ” Despite all the battery
 activity in <location>California</location>, executives around the
 utility industry remain cautious. “The reason we don’t have widespread
 batteries on our system is because it is not   for us,” said Alice
-Jackson, vice president for strategic revenue initiatives at Xcel, a
+Jackson, vice president for strategic revenue initiatives at <location>Xcel</location>, a
 giant electricity and gas utility serving eight Western and Midwestern
 states. Xcel has been testing batteries about as long as AES, but
 almost exclusively in small pilots. “It’s fair to say we don’t have
