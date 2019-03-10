@@ -16,7 +16,7 @@ def predict_accuracy_on_diff_classifiers(data_set):
     # 1. Decision Tree
     decision_tree_model = DecisionTreeClassifier()
     cross_validation_score = cross_val_score(decision_tree_model,
-                                                feature_set, label_set, cv=cross_validation_fold)
+                                                feature_set, label_set, cv=cross_validation_fold, scoring='roc_auc')
     average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("1. Decision Tree accuracy: ", average_cross_validation_accuracy)
 
@@ -24,30 +24,28 @@ def predict_accuracy_on_diff_classifiers(data_set):
     # 2. Random Forest
     random_forest_model = RandomForestClassifier(n_estimators=100)
     cross_validation_score = cross_val_score(
-        random_forest_model, feature_set, label_set, cv=cross_validation_fold)
+        random_forest_model, feature_set, label_set, cv=cross_validation_fold, scoring='roc_auc')
     average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("2. Random Forest accuracy: ", average_cross_validation_accuracy)
 
     # 3. Support Vector Machine
     svm_model = svm.SVC(kernel='linear', C=1)
     cross_validation_score = cross_val_score(
-        svm_model, feature_set, label_set, cv=cross_validation_fold)
+        svm_model, feature_set, label_set, cv=cross_validation_fold, scoring='roc_auc')
     average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("3. Support Vector Machine accuracy: ", average_cross_validation_accuracy)
 
     # 4. Linear Regression
     linear_regression_model = LinearRegression()
-    # scikit-learn internally returns negative MSE for Linear Regression
-    negative_mse = cross_val_score(
-        linear_regression_model, feature_set, label_set, cv=cross_validation_fold)
-    average_mse = abs(np.mean(negative_mse))
-    average_accuracy = 1-average_mse
-    print("4. Linear Regression accuracy: ", average_accuracy)
+    cross_validation_accuracy = cross_val_score(
+        linear_regression_model, feature_set, label_set, cv=cross_validation_fold, scoring='roc_auc')
+    average_cross_validation_accuracy = abs(np.mean(cross_validation_accuracy))
+    print("4. Linear Regression accuracy: ", average_cross_validation_accuracy)
 
     # 5. Logistic Regression
     logistic_regression_model = LogisticRegression(solver='lbfgs')
     cross_validation_accuracy = cross_val_score(logistic_regression_model, feature_set,
-                                                label_set, cv=cross_validation_fold)
+                                                label_set, cv=cross_validation_fold, scoring='roc_auc')
     average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
     print("5. Logistic Regression accuracy: ", average_cross_validation_accuracy)
 

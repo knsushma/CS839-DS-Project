@@ -1,6 +1,6 @@
 import numpy as np
-import enchant
-import nltk
+# import enchant
+# import nltk
 from nltk.corpus import wordnet
 
 neg_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
@@ -94,12 +94,12 @@ def is_index_not_out_of_bound(current_index, word_length, length_of_corpus):
         return False
 
 #Features for Positivity
-def is_english_word(word):
-    en_lang = enchant.Dict("en_US")
-    if (en_lang.check(str(word))):
-        return True
-    else:
-        return False
+# def is_english_word(word):
+#     en_lang = enchant.Dict("en_US")
+#     if (en_lang.check(str(word))):
+#         return True
+#     else:
+#         return False
 
 entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
 def is_previous_word_strong_preposition_for_entity_recognition(prev, next):
