@@ -5,7 +5,7 @@ cheer. The opening of a new subway line is a rare occasion in the
 <location>United States</location> and comes at a time of mounting concern
 about the deteriorating state of the nation’s infrastructure, from its roadways
 and bridges to its public transit systems. Few new subway stations have opened
-in recent years, even as expansive subway networks have sprouted in Asia, and
+in recent years, even as expansive subway networks have sprouted in <location>Asia</location>, and
 most American cities never built any in the first place. The major subways in
 the Northeast  —   in <location>New York</location>,
 <location>Washington</location> and <location>Boston</location>  —   are
