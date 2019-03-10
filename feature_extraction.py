@@ -64,7 +64,7 @@ def extract_feature_set(words, entity_set):
         if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
 
             #F9
-            feature_set.append(is_next_word_verb(words[index+1]))
+            #feature_set.append(is_next_word_verb(words[index+1]))
 
             # F10
             feature_set.append(is_word_ending_with_non_entity_recognition( words[index]))
@@ -78,7 +78,7 @@ def extract_feature_set(words, entity_set):
             else:
                 feature_set.append(1)
         else:
-            feature_set.extend([1,1,1,1])
+            feature_set.extend([1,1,1])
 
 
         feature_frame.append(feature_set)
