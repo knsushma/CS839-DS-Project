@@ -1,6 +1,6 @@
-<location>Baghdad</location>  —   A suicide bomber detonated a pickup truck
-loaded with explosives on Monday in a busy <location>Baghdad</location> market,
-killing at least 36 people hours after President François Hollande of France
+A suicide bomber detonated a pickup truck
+loaded with explosives on Monday in <location>Baghdad</location>,
+killing at least 36 people hours after President François Hollande of <location>France</location>
 arrived in the Iraqi capital. The Islamic State later claimed responsibility
 for the attack. The bomb went off in a produce market that was packed with day
 laborers, a police officer said, adding that another 52 people were wounded.
@@ -12,7 +12,7 @@ website that is often used by the group. It was the third such attack in three
 days in or near <location>Baghdad</location>, underscoring the lingering threat
 posed by the extremist group despite a string of setbacks for it elsewhere in
 the country over the past year, including in and around the northern city of
-Mosul. The attack took place in Sadr City, a vast Shiite district in eastern
+<location>Mosul</location>. The attack took place in <location>Sadr City</location>, a vast Shiite district in eastern
 <location>Baghdad</location> that has been repeatedly targeted by Sunni
 extremists since the 2003   invasion. Militiamen loyal to the Shiite cleric
 Moktada   were seen evacuating bodies in their trucks before ambulances
