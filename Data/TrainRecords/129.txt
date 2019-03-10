@@ -1,7 +1,7 @@
  “I was very choked up,” Betsy Morris, 70, said as she rode the first train to leave the
 96th Street station, at noon. “How do you explain something that you never
 thought would happen? It’s going to change the way everybody lives as far as
-commuting goes. ” It was a major moment for New York’s sprawling transit system
+commuting goes. ” It was a major moment for <location>New York</location>’s sprawling transit system
 after decades of failed efforts to bring the line to one of the few corners of
 <location>Manhattan</location> the subway did not reach. The opening of the
 first segment of the line  —   an extension of the Q train to 96th Street  —
