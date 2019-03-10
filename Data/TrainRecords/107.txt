@@ -1,12 +1,12 @@
-<location>WEST PALM BEACH</location>, Fla.  —   When   Donald J. Trump rang in the new year this
+When Donald J. Trump rang in the new year this
 weekend, he did it in   opulence, joined by the actor Sylvester Stallone, the
 gossip page fixture Fabio and a crowd of wealthy developers reveling under the
-swaying palm trees at Mr. Trump’s    resort in <location>palm beach</location>. President George W.
+swaying palm trees at Mr. Trump’s    resort in <location>Palm Beach</location>. President George W.
 Bush had his ranch in Crawford, Tex. His father had a compound in
-Kennebunkport, Me. President Obama has taken frequent vacations in Hawaii,
+<location>Kennebunkport</location>, Me. President Obama has taken frequent vacations in <location>Hawaii</location>,
 staying at a private home. But Mr. Trump’s   private club in
 <location>Florida</location>, where he has spent the past two weeks away from
-his home in <location>New York</location> City, is likely to eclipse them all
+his home in <location>New York City</location>, is likely to eclipse them all
 as the 45th president’s winter White House. And that was always the intention
 of Marjorie Meriweather Post, the cereal heiress and the property’s original
 owner, who left    to the federal government when she died in 1973, hoping it
