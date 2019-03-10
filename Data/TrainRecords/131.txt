@@ -1,5 +1,5 @@
 A station that opened at Hudson Yards on
-Manhattan’s Far West Side in 2015 was the city’s first new station in a  . On
+<location>Manhattan</location>’s Far West Side in 2015 was the city’s first new station in a  . On
 Sunday, New Yorkers were mesmerized by the artwork adorning the walls. At the
 72nd Street stop, Sumana Harihareswara stopped to gaze at a mosaic of a woman
 of South Asian descent dressed in a burgundy sari, looking at her cellphone.
@@ -7,7 +7,7 @@ Ms. Harihareswara was overcome with emotion. “I don’t think I’ve ever come
 across subway art before that makes me feel so seen,” she said through tears.
 “This woman could be my aunt she could be my cousin. ” She and a stranger
 exchanged a knowing glance. “Representation matters,” they agreed. Ms.
-Harihareswara, a longtime transit enthusiast from Astoria, Queens, said she was
+Harihareswara, a longtime transit enthusiast from <location>Astoria</location>, <location>Queens</location>, said she was
 struck by the diversity portrayed in the mosaics, including a mural of a gay
 couple holding hands. “There is no feeling quite like seeing yourself cemented
 into the infrastructure of <location>New York</location>,” Ms. Harihareswara
@@ -18,8 +18,8 @@ officials pushed the deadline to the end of 2016 many years ago. Gov. Andrew M.
 Cuomo, a Democrat who effectively controls the authority, pressed officials to
 meet the December 2016 deadline even as concerns grew that the subway would not
 be ready in time. The man shook his head and said, “Well, you’re immortalized
-as far as I’m concerned. ” Another   celebrant, Ian Ma, 15, lives in Sheepshead
-Bay, a waterfront neighborhood in southern <location>Brooklyn</location> that
+as far as I’m concerned. ” Another   celebrant, Ian Ma, 15, lives in <location>Sheepshead
+Bay</location>, a waterfront neighborhood in southern <location>Brooklyn</location> that
 is nowhere near the new subway line. But he has been enchanted by trains since
 he started rolling toy models on the floor as a child, he said, and he cajoled
 his parents into giving him a ride. “I feel like I’ve been waiting for this
