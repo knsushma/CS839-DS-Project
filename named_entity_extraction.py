@@ -15,13 +15,22 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
     #data_frame = np.array(data_frame)
 
     return data_frame
-disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
+
+unigram_disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
                     "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday", "Monday", "Tuesday", "Wednesday",
-                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New Year", "Eastern", "President", "Twitter", "Facebook", "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Prime", "Vice", "Minister", "Government", "Oscar" ]
+                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New", "Eastern", "President", "Twitter", "Facebook", "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth" ]
+
+bigram_disposable_words = ["New Year", "New Year's", "Prime Minister", "Vice President", "according to"]
 # disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
 #                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
 #                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]
 
+def has_bigram_disposable_words(words, index):
+    if (is_index_not_out_of_bound(index, 1, len(words)) and
+            (" ".join([words[index], words[index+1]])).lower() in [X.lower() for X in bigram_disposable_words] ):
+        return True
+    else:
+        return False
 
 
 def form_feature_dataframe(start_index, end_index):
@@ -55,8 +64,11 @@ def form_feature_dataframe(start_index, end_index):
                         next(islice(iter_words, len_of_word_matched-1, len_of_word_matched-1), None)
             else:
                 # Reduce the unneccesary words, skip them from saving it in unnamed_entity
-                if word and word[0].isupper() and word.lower() not in [X.lower() for X in disposable_words] and not (any(ch.isdigit() for ch in word)):
-                    unnamed_entity.append([index, word, 1])
+                if (has_bigram_disposable_words(words, index)):
+                    next(islice(iter_words, 2 , 2 ), None)
+                else:
+                    if word and word[0].isupper() and word.lower() not in [X.lower() for X in unigram_disposable_words] and not (any(ch.isdigit() for ch in word)):
+                        unnamed_entity.append([index, word, 1])
 
         positive_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in named_entity})
         negative_entity_feature_set = extract_feature_set(words, {en[0]:en[1:] for en in unnamed_entity})

@@ -123,7 +123,7 @@ def is_previous_word_weak_preposition_for_entity_recognition(prev):
     else:
         return 0
 
-entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern", "mainland", "contemporary"]
+entity_recognition_specifics = ["south", "north", "east", "west", "eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern", "mainland", "contemporary"]
 def is_previous_word_for_entity_recognition(prev):
     if (prev and any(prev.lower() == word for word in entity_recognition_specifics)):
         return 1
@@ -154,7 +154,7 @@ def is_previous_word_location_with_AND_OR(prev, prev_prev):
         return 0
 
 entity_recognition_prepositions_in_prev_prev_word = ["and", "in", "of", "at", "for", "with", "around", "from", "across", "like"]
-country_list = ["United", "Czech Republic", "Philippines", "U.S.", "U. S.", "U.K."]
+country_list = ["United", "Czech Republic", "Philippines", "U.S.", "U. S.", "U.K.", "New York", "United Arab Emirates"]
 def is_previous_two_words_preposition_and_THE(prev, prev_prev, word):
     if (prev and prev.lower() == "the" and prev_prev and
             any(prev_prev.lower() == prep for prep in entity_recognition_prepositions_in_prev_prev_word) and any(country in word for country in country_list) ):
@@ -203,14 +203,14 @@ def is_word_ending_with_non_entity_recognition(word):
 non_entity_recognition_in_next_word = ["University", "State University", "Police", "government", "Times", "Post",
                                        "Institute", "Development", "Society", "Development",
                                        "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park",
-                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks"]
+                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks", "Daily"]
 def is_next_word_for_non_entity_recognition(next):
     if (next and any(entity == next for entity in non_entity_recognition_in_next_word)):
         return 0
     else:
         return 1
 
-non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of"]
+non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "friend of"]
 def is_previous_two_words_for_non_entity_recognotion(prev, prev_prev):
     if (prev and prev_prev and any(entity == (" ".join([prev_prev, prev])) for entity in non_entity_recognition_in_prev_prev_word)):
         return 0
