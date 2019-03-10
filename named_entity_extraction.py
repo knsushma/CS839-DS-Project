@@ -71,7 +71,7 @@ def form_feature_dataframe(start_index, end_index):
 print("on train now")
 training_dataframe = form_feature_dataframe(101, 160)
 print("on test now")
-test_dataframe = form_feature_dataframe(161, 230)
+test_dataframe = form_feature_dataframe(161, 200)
 
 predict_accuracy_on_diff_classifiers(training_dataframe)
 #print(df[0:160], df[-66:])
