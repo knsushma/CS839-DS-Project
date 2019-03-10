@@ -16,8 +16,8 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
 
     return data_frame
 disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
-                    "September", "October", "November", "December", "Sunday", "Monday", "Tuesday", "Wednesday",
-                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New Year", "Eastern"]
+                    "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday", "Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New Year", "Eastern", "President", "Twitter", "Facebook", "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata" ]
 # disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
 #                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
 #                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]
@@ -69,9 +69,9 @@ def form_feature_dataframe(start_index, end_index):
 # print(check[np.where(check[:,-1] == '1')].tolist())
 # df = np.array(training_dataframe)
 print("on train now")
-training_dataframe = form_feature_dataframe(101, 160)
+training_dataframe = form_feature_dataframe(101, 200)
 print("on test now")
-test_dataframe = form_feature_dataframe(161, 200)
+test_dataframe = form_feature_dataframe(201, 260)
 
 predict_accuracy_on_diff_classifiers(training_dataframe)
 #print(df[0:160], df[-66:])

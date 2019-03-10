@@ -79,7 +79,7 @@ def extract_feature_set(words, entity_set):
 
 
         else:
-            feature_set.extend([0,0,0,0,0,0,0,0])
+            feature_set.extend([0,0,0,0,0,0,0, 0])
 
         #Negative Cases
         if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
@@ -133,6 +133,7 @@ def is_english_word(word):
 
 entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
 def is_previous_word_strong_preposition_for_entity_recognition(prev, next):
+    # next and (all(entity != next for entity in non_entity_recognition_in_next_word)) and
     if ( next and (all(entity != next for entity in non_entity_recognition_in_next_word)) and
             prev and any(prev == entity for entity in entity_recognition_strong_prepositions)):
         return True
@@ -202,7 +203,7 @@ def is_next_word_verb(word):
     else:
         return False
 
-non_entity_ending_words = ["ean", "ian", "can", "man", "xan", "ban", "ish", "ese"]
+non_entity_ending_words = ["ean", "ian", "can", "man", "xan", "ban", "ish", "ese", "ans"]
 def is_word_ending_with_non_entity_recognition(word):
     word = word.strip(",")
     if (word and len(word)>3 and any(entity == word[-3:] for entity in non_entity_ending_words)):

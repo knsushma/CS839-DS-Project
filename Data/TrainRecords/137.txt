@@ -1,6 +1,4 @@
-China’s pledge to shut down its commercial ivory
-trade is galvanizing support among African trading partners and could boost its
-international standing. [The New York Times] • Suicide bombers struck the
+Suicide bombers struck the
 international airport in <location>Mogadishu</location>,
 <location>Somalia</location>, killing at least three security officers. A prison battle in <location>Brazil</location> between gangs
 fighting for control of the cocaine trade left about 60 inmates dead  —   some
@@ -12,4 +10,4 @@ city of <location>Quetta</location> after a strain of the virus was found in sew
 is the latest sign that Chinese pressure is outweighing the country’s deep ties
 to the Tibetan leader. [The New York Times] • Pan Pan, a    panda who fathered
 nearly a quarter of the world’s captive pandas, died last week at a
-conservation center in China’s Sichuan Province. [The New York Times]
+conservation center in <location>China</location>’s Sichuan Province. [The New York Times]
