@@ -1,34 +1,4 @@
-But as he began to plan for this year’s election cycle, he was well aware that
-the D. N. C. could become a   target again. There were aspirations to ensure
-that the D. N. C. was well protected against cyberintruders  —   and then there
-was the reality, Mr. Brown and his bosses at the organization acknowledged: The
-D. N. C. was a nonprofit group, dependent on donations, with a fraction of the
-security budget that a corporation its size would have. “There was never enough
-money to do everything we needed to do,” Mr. Brown said. The D. N. C. had a
-standard email   service, intended to block phishing attacks and malware
-created to resemble legitimate email. But when Russian hackers started in on
-the D. N. C. the committee did not have the most advanced systems in place to
-track suspicious traffic, internal D. N. C. memos show. Mr. Tamene, who reports
-to Mr. Brown and fielded the call from the F. B. I. agent, was not a   D. N. C.
-employee he works for a   contracting firm called The MIS Department. He was
-left to figure out, largely on his own, how to respond  —   and even whether
-the man who had called in to the D. N. C. switchboard was really an F. B. I.
-agent. “The F. B. I. thinks the D. N. C. has at least one compromised computer
-on its network and the F. B. I. wanted to know if the D. N. C. is aware, and if
-so, what the D. N. C. is doing about it,” Mr. Tamene wrote in an internal memo
-about his contacts with the F. B. I. He added that “the Special Agent told me
-to look for a specific type of malware dubbed ‘Dukes’ by the <location>U. S.
-</location>intelligence community and in cybersecurity circles. ” Part of the
-problem was that Special Agent Hawkins did not show up in person at the D. N.
-C. Nor could he email anyone there, as that risked alerting the hackers that
-the F. B. I. knew they were in the system. Mr. Tamene’s initial scan of the D.
-N. C. system  —   using his    tools and incomplete targeting information from
-the F. B. I.  —   found nothing. So when Special Agent Hawkins called
-repeatedly in October, leaving voice mail messages for Mr. Tamene, urging him
-to call back, “I did not return his calls, as I had nothing to report,” Mr.
-Tamene explained in his memo. In November, Special Agent Hawkins called with
-more ominous news. A D. N. C. computer was “calling home, where home meant
-<location>Russia</location>,” Mr. Tamene’s memo says, referring to software
+ A D. N. C. computer was “calling home, where home meant Russia,” Mr. Tamene’s memo says, referring to software
 sending information to <location>Moscow</location>. “SA Hawkins added that the
 F. B. I. thinks that this calling home behavior could be the result of a
 attack. ” Mr. Brown knew that Mr. Tamene, who declined to comment, was fielding

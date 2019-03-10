@@ -1,16 +1,16 @@
-<location>SYDNEY</location>, <location>Australia</location>  —   The annual
-beach pilgrimage during the height of summer in Melbourne, Australia’s   city,
+The annual
+beach pilgrimage during the height of summer in <location>Melbourne</location>, <location>Australia</location>’s   city,
 is threatened by an unsettling phenomenon: shores where the tides are tainted
 with excrement. The Environment Protection Authority in the state of
 <location>Victoria</location> said on Monday that heavy rains had caused fecal
-pollution to wash into Port Phillip from rivers, creeks and drains. It advised
+pollution to wash into <location>Port Phillip</location> from rivers, creeks and drains. It advised
 against swimming at 21 beaches because of poor water quality. “It’s poo in all
 its luxurious forms that is causing the problem,” said Anthony Boxshall, the
 agency’s manager of applied sciences, noting that the waste was coming from
 people, dogs, horses, cows, birds and other animals. Fecal pollution can cause
 serious health problems, including gastroenteritis. Mr. Boxshall said much of
-the waste had been washed down the   Yarra River that runs through Melbourne
-into Port Phillip, affecting the city’s bayside beaches the most. The agency,
+the waste had been washed down the   Yarra River that runs through <location>Melbourne</location>
+into <location>Port Phillip</location>, affecting the city’s bayside beaches the most. The agency,
 which takes regular water samples, rates beaches. A “good” rating means that
 the water is suitable for swimming. “Fair” means that rainfall has affected the
 water. “Poor” means people should avoid it. Residents said that the pollution

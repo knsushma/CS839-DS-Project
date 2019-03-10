@@ -10,7 +10,7 @@ States</location>. ” Volkswagen clearly hoped the settlement would be the turn
 that allows it to begin rebuilding its shattered reputation. The company issued
 publicity photographs this week of a shiny replacement for the blue and white
 “VW” logo that for decades has stood like a giant hood ornament atop
-Volkswagen’s   executive offices in its hometown, Wolfsburg. “Volkswagen deeply
+Volkswagen’s   executive offices in its hometown, <location>Wolfsburg</location>. “Volkswagen deeply
 regrets the behavior that gave rise to the diesel crisis,” Matthias Müller, its
 chief executive, said in a statement. “Since all of this came to light, we have
 worked tirelessly to make things right for our affected customers. ” But the

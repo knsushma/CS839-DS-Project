@@ -1,4 +1,4 @@
-Finally. The Second Avenue subway opened in <location>New York</location> City
+Finally. The Second Avenue subway opened in <location>New York City</location>
 on Sunday, with thousands of riders flooding into its polished stations to
 witness a piece of history nearly a century in the making. They descended
 beneath the streets of the Upper East Side of <location>Manhattan</location> to

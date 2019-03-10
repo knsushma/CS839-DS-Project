@@ -15,24 +15,24 @@ def predict_accuracy_on_diff_classifiers(data_set):
 
     # 1. Decision Tree
     decision_tree_model = DecisionTreeClassifier()
-    cross_validation_accuracy = cross_val_score(decision_tree_model,
+    cross_validation_score = cross_val_score(decision_tree_model,
                                                 feature_set, label_set, cv=cross_validation_fold)
-    average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
+    average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("1. Decision Tree accuracy: ", average_cross_validation_accuracy)
 
 
     # 2. Random Forest
     random_forest_model = RandomForestClassifier(n_estimators=100)
-    cross_validation_accuracy = cross_val_score(
+    cross_validation_score = cross_val_score(
         random_forest_model, feature_set, label_set, cv=cross_validation_fold)
-    average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
+    average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("2. Random Forest accuracy: ", average_cross_validation_accuracy)
 
     # 3. Support Vector Machine
     svm_model = svm.SVC(kernel='linear', C=1)
-    cross_validation_accuracy = cross_val_score(
+    cross_validation_score = cross_val_score(
         svm_model, feature_set, label_set, cv=cross_validation_fold)
-    average_cross_validation_accuracy = np.mean(cross_validation_accuracy)
+    average_cross_validation_accuracy = np.mean(cross_validation_score)
     print("3. Support Vector Machine accuracy: ", average_cross_validation_accuracy)
 
     # 4. Linear Regression
