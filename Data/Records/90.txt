@@ -1,64 +1,13 @@
-With the new monitoring system in place, Mr. Tamene had examined
-administrative logs of the D. N. C. ’s computer system and found something very
-suspicious: An unauthorized person, with   security status, had gained access
-to the D. N. C. ’s computers. “Not sure it is related to what the F. B. I. has
-been noticing,” said one internal D. N. C. email sent on April 29. “The D. N.
-C. may have been hacked in a serious way this week, with password theft, etc. ”
-No one knew just how bad the breach was  —   but it was clear that a lot more
-than a single filing cabinet worth of materials might have been taken. A secret
-committee was immediately created, including Ms. Dacey, Ms. Wasserman Schultz,
-Mr. Brown and Michael Sussmann, a former cybercrimes prosecutor at the
-Department of Justice who now works at Perkins Coie, the
-<location>Washington</location> law firm that handles D. N. C. political
-matters. “Three most important questions,” Mr. Sussmann wrote to his clients
-the night the   was confirmed. “1) What data was accessed? 2) How was it done?
-3) How do we stop it?” Mr. Sussmann instructed his clients not to use D. N. C.
-email because they had just one opportunity to lock the hackers out  —   an
-effort that could be foiled if the hackers knew that the D. N. C. was on to
-them. “You only get one chance to raise the drawbridge,” Mr. Sussmann said. “If
-the adversaries know you are aware of their presence, they will take steps to
-burrow in, or erase the logs that show they were present. ” The D. N. C.
+ The D. N. C.
 immediately hired CrowdStrike, a cybersecurity firm, to scan its computers,
 identify the intruders and build a new computer and telephone system from
 scratch. Within a day, CrowdStrike confirmed that the intrusion had originated
 in <location>Russia</location>, Mr. Sussmann said. The work that such companies
 do is a computer version of   crime scene investigation, with fingerprints,
 bullet casings and DNA swabs replaced by an electronic trail that can be just
-as incriminating. And just as police detectives learn to identify the telltale
-methods of a veteran burglar, so CrowdStrike investigators recognized the
-distinctive handiwork of Cozy Bear and Fancy Bear. Those are CrowdStrike’s
-nicknames for the two Russian hacking groups that the firm found at work inside
-the D. N. C. network. Cozy Bear  —   the group also known as the Dukes or A. P.
-T. 29, for “advanced persistent threat”  —   may or may not be associated with
-the F. S. B. the main successor to the   K. G. B. but it is widely believed to
-be a Russian government operation. It made its first appearance in 2014, said
-Dmitri Alperovitch, CrowdStrike’s   and chief technology officer. It was Cozy
-Bear, CrowdStrike concluded, that first penetrated the D. N. C. in the summer
-of 2015, by sending   emails to a long list of American government agencies,
-<location>Washington</location> nonprofits and government contractors. Whenever
-someone clicked on a phishing message, the Russians would enter the network,
-“exfiltrate” documents of interest and stockpile them for intelligence
-purposes. “Once they got into the D. N. C. they found the data valuable and
+as incriminating. “Once they got into the D. N. C. they found the data valuable and
 decided to continue the operation,” said Mr. Alperovitch, who was born in
 <location>Russia</location> and moved to the <location>United States</location>
 as a teenager. Only in March 2016 did Fancy Bear show up  —   first penetrating
 the computers of the Democratic Congressional Campaign Committee, and then
-jumping to the D. N. C. investigators believe. Fancy Bear, sometimes called A.
-P. T. 28 and believed to be directed by the G. R. U.
-<location>Russia</location>’s military intelligence agency, is an older outfit,
-tracked by Western investigators for nearly a decade. It was Fancy Bear that
-got hold of Mr. Podesta’s email. Attribution, as the skill of identifying a
-cyberattacker is known, is more art than science. It is often impossible to
-name an attacker with absolute certainty. But over time, by accumulating a
-reference library of hacking techniques and targets, it is possible to spot
-repeat offenders. Fancy Bear, for instance, has gone after military and
-political targets in <location>Ukraine</location> and
-<location>Georgia</location>, and at NATO installations. That largely rules out
-cybercriminals and most countries, Mr. Alperovitch said. “There’s no plausible
-actor that has an interest in all those victims other than
-<location>Russia</location>,” he said. Another clue: The Russian hacking groups
-tended to be active during working hours in the <location>Moscow</location>
-time zone. To their astonishment, Mr. Alperovitch said, CrowdStrike experts
-found signs that the two Russian hacking groups had not coordinated their
-attacks. Fancy Bear, apparently not knowing that Cozy Bear had been rummaging
-in D. N. C. files for months, took many of the same documents.
+jumping to the D. N. C. investigators believe.
