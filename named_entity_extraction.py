@@ -17,8 +17,9 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
     return data_frame
 
 unigram_disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
-                    "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday", "Monday", "Tuesday", "Wednesday",
-                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New", "Eastern", "President", "Twitter", "Facebook", "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth" ]
+                    "September", "October", "November", "December", "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Sunday",
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Good", "Christmas", "New", "Eastern", "President", "Twitter", "Facebook",
+                    "Google", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth", "King", "University" ]
 
 bigram_disposable_words = ["New Year", "New Year's", "Prime Minister", "Vice President", "according to"]
 # disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
@@ -83,7 +84,7 @@ def form_feature_dataframe(start_index, end_index):
 print("on train now")
 training_dataframe = form_feature_dataframe(60, 210)
 print("on test now")
-test_dataframe = form_feature_dataframe(211, 267)
+test_dataframe = form_feature_dataframe(211, 297)
 
 predict_accuracy_on_diff_classifiers(training_dataframe)
 #print(df[0:160], df[-66:])

@@ -4,7 +4,7 @@ National Historic Landmarks. The list of new landmarks, announced on Wednesday,
 comes as the National Park Service, the division of the Department of the
 Interior that administers the landmarks program, has finished celebrating its
 100th anniversary. It reflects an effort to tell what a news release called “a
-more inclusive and diverse story of America’s history. ” “These 24 new
+more inclusive and diverse story of <location>America</location>’s history. ” “These 24 new
 designations depict different threads of the American story that have been told
 through activism, architecture, music and religious observance,” Sally Jewell,
 the secretary of the Interior, said in a statement.
