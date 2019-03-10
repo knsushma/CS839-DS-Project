@@ -1,8 +1,8 @@
 The rain this week shut down Laurel Canyon Boulevard after
 the waterlogged porch of a house collapsed into the roadway, and flash flood
 warnings were issued in <location>Los Angeles</location> as storms swept back and forth across the
-area on Thursday evening. In <location>Northern California</location>, the storms produced extensive
-flooding in Sonoma County and around Sacramento  —   among the   parts of the
+area on Thursday evening. In Northern <location>California</location>, the storms produced extensive
+flooding in <location>Sonoma County</location> and around <location>Sacramento</location>  —   among the   parts of the
 state. Ski resorts reported that 12 feet of snow fell in <location>Tahoe</location>. Mudslides
 closed Interstate 80 as the storm passed through <location>Sierra Nevada</location>. At least five
 people have died, officials said. Reservoirs that were parched last year are
