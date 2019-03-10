@@ -1,0 +1,8 @@
+About 56 percent of the parts in Fiat Chrysler’s pickups are made in the
+<location>United States</location> and <location>Canada</location>, and 29
+percent are produced in <location>Mexico</location>. At Ford, about 70
+percent of its pickup components are made in the <location>United
+States</location> and <location>Canada</location>, and 15 percent come from
+<location>Mexico</location>. For all three automakers, that mix of parts
+applies whether the truck is made in the <location>United States</location>
+or <location>Mexico</location>.
