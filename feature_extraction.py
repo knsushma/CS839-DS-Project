@@ -45,7 +45,7 @@ def extract_feature_set(words, entity_set):
 
             # F6
             if (is_index_not_out_of_bound(index-1, entity[1], corpus_length)):
-                feature_set.append(is_previous_word_location_with_AND(words[index - 1], words[index - 2]))
+                feature_set.append(is_previous_word_location_with_AND_OR(words[index - 1], words[index - 2]))
             else:
                 feature_set.append(0)
 
@@ -64,21 +64,27 @@ def extract_feature_set(words, entity_set):
         if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
 
             #F9
-            #feature_set.append(is_next_word_verb(words[index+1]))
+            feature_set.append(is_next_word_verb(words[index+1]))
+
+            #feature_set.append(is_next_word_verb(words[index - 1]))
 
             # F10
             feature_set.append(is_word_ending_with_non_entity_recognition( words[index]))
 
             # F11
-            feature_set.append(is_next_word_for_non_entity_recognition(words[index + 1]))
-
-            # F12
             if (is_index_not_out_of_bound(index-1, entity[1], corpus_length)):
                 feature_set.append(is_previous_two_words_for_non_entity_recognotion(words[index - 1], words[index - 2]))
             else:
                 feature_set.append(1)
+
+            # F12
+            feature_set.append(is_next_word_for_non_entity_recognition(words[index + 1]))
+
+            # F13
+            feature_set.append(is_next_word_for_non_entity_recognition_specifics(words[index + 1]))
+
         else:
-            feature_set.extend([1,1,1])
+            feature_set.extend([1,1,1,1,1])
 
 
         feature_frame.append(feature_set)
@@ -101,7 +107,7 @@ def is_index_not_out_of_bound(current_index, word_length, length_of_corpus):
 #     else:
 #         return False
 
-entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
+entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around", "inside"]
 def is_previous_word_strong_preposition_for_entity_recognition(prev, next):
     # next and (all(entity != next for entity in non_entity_recognition_in_next_word)) and
     if ( next and (all(entity != next for entity in non_entity_recognition_in_next_word)) and
@@ -110,14 +116,14 @@ def is_previous_word_strong_preposition_for_entity_recognition(prev, next):
     else:
         return 0
 
-entity_recognition_weak_prepositions = ["with", "as", "through", "outside", "throughout", "into"]
+entity_recognition_weak_prepositions = ["with", "as", "through", "outside", "throughout", "into", "leave", "like", "about"]
 def is_previous_word_weak_preposition_for_entity_recognition(prev):
     if (prev and any(prev == entity for entity in entity_recognition_weak_prepositions)):
         return 1
     else:
         return 0
 
-entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern"]
+entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern", "mainland", "contemporary"]
 def is_previous_word_for_entity_recognition(prev):
     if (prev and any(prev.lower() == word for word in entity_recognition_specifics)):
         return 1
@@ -125,7 +131,7 @@ def is_previous_word_for_entity_recognition(prev):
         return 0
 
 entity_recognition_prepositions_in_pre_pre_word = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
-entity_recognition_prepositions_in_pre_word = ["a", "an"] + entity_recognition_specifics
+entity_recognition_prepositions_in_pre_word = ["a", "an", "new"] + entity_recognition_specifics
 def is_previous_to_previous_word_preposition_for_entity_recognition(prev_prev, prev):
     # prev and any(prev == entity for entity in entity_recognition_prepositions_in_pre_word) and
     if (prev and any(prev.lower() == entity for entity in entity_recognition_prepositions_in_pre_word) and
@@ -141,15 +147,17 @@ def is_previous_word_ending_with_comma(prev):
     else:
         return 0
 
-def is_previous_word_location_with_AND(prev, prev_prev):
-    if (prev and prev.lower() == "and" and prev_prev and ("location>" in prev_prev)):
+def is_previous_word_location_with_AND_OR(prev, prev_prev):
+    if (prev and (prev.lower() == "and" or prev.lower == "or") and prev_prev and ("location>" in prev_prev)):
         return 1
     else:
         return 0
 
-entity_recognition_prepositions_in_prev_prev_word = ["and", "in", "of", "at", "for", "around"]
+entity_recognition_prepositions_in_prev_prev_word = ["and", "in", "of", "at", "for", "around", "from", "across"]
+country_list = ["United", "Czech Republic", "Philippines", "U.S.", "U. S.", "U.K.", "New"]
 def is_previous_two_words_preposition_and_THE(prev, prev_prev, word):
-    if (prev and prev.lower() == "the" and prev_prev and any(prev_prev.lower() == prep for prep in entity_recognition_prepositions_in_prev_prev_word) and "United" in word ):
+    if (prev and prev.lower() == "the" and prev_prev and
+            any(prev_prev.lower() == prep for prep in entity_recognition_prepositions_in_prev_prev_word) and any(country in word for country in country_list) ):
         return 1
     else:
         return 0
@@ -173,6 +181,17 @@ def is_next_word_verb(word):
     else:
         return 1
 
+def is_prev_word_verb(word):
+    #print(word, wordnet.synsets(word))
+    if(wordnet.synsets(word)):
+        w = wordnet.synsets(word)[0].pos()
+        if (w == "v"):
+            return 0
+        else:
+            return 1
+    else:
+        return 1
+
 non_entity_ending_words = ["ean", "ian", "can", "man", "xan", "ban", "ish", "ese", "ans"]
 def is_word_ending_with_non_entity_recognition(word):
     word = word.strip(",")
@@ -181,7 +200,10 @@ def is_word_ending_with_non_entity_recognition(word):
     else:
         return 1
 
-non_entity_recognition_in_next_word = ["University", "Police", "government", "Times", "Post", "Institute", "Development", "Society", "Development", "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park", "studio", "Corporation", "Entertainment", "Legislature"]
+non_entity_recognition_in_next_word = ["University", "Police", "government", "Times", "Post",
+                                       "Institute", "Development", "Society", "Development",
+                                       "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park",
+                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province"]
 def is_next_word_for_non_entity_recognition(next):
     if (next and any(entity == next for entity in non_entity_recognition_in_next_word)):
         return 0
@@ -191,6 +213,13 @@ def is_next_word_for_non_entity_recognition(next):
 non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of"]
 def is_previous_two_words_for_non_entity_recognotion(prev, prev_prev):
     if (prev and prev_prev and any(entity == (" ".join([prev_prev, prev])) for entity in non_entity_recognition_in_prev_prev_word)):
+        return 0
+    else:
+        return 1
+
+non_entity_recognition_in_next_word_specifics = ["nation", "forces", "leaders", "officials", "strategy", "adviser", "woman", "man", "refugees"]
+def is_next_word_for_non_entity_recognition_specifics(next):
+    if (next and any(entity == next for entity in non_entity_recognition_in_next_word_specifics)):
         return 0
     else:
         return 1

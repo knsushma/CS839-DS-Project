@@ -24,7 +24,7 @@ not issued any surprise pardons  —   though he has every right to exercise tha
 power through his final day in office, the way President Bill Clinton pardoned
 Marc Rich, a tax fugitive. At the same time, some things are already out of Mr.
 Obama’s reach. Federal law will not allow him to release more detainees from
-Guantánamo Bay after four more were released on Jan. 5. There is not enough
+<location>Guantánamo</location> Bay after four more were released on Jan. 5. There is not enough
 time to finish the legal framework to regulate emissions from airplanes. And
 officials say there are no more monuments or federal parks to be designated
 before the transfer of power. But taken together, the administration’s    push
