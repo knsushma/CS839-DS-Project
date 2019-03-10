@@ -185,7 +185,6 @@ def is_next_word_verb(word):
         return 1
 
 def is_prev_word_verb(word):
-    #print(word, wordnet.synsets(word))
     if(wordnet.synsets(word)):
         w = wordnet.synsets(word)[0].pos()
         if (w == "v"):
@@ -210,17 +209,17 @@ def is_prev_word_for_non_entity_recognition_for_name_prefixes(prev):
     else:
         return 1
 
-non_entity_recognition_in_next_word = ["University", "State University", "Police", "government", "Times", "Post",
+non_entity_recognition_in_next_word = ["University", "Police", "government", "Times", "Post",
                                        "Institute", "Development", "Society", "Development",
                                        "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park",
-                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks", "Daily", "religion", "Brands"]
+                                       "studio", "Corporation", "Entertainment", "Legislature", "Pictures", "Authority", "Province", "Hills", "Hill", "Awards", "Airport", "Talks", "Daily", "religion", "Brands", "territory"]
 def is_next_word_for_non_entity_recognition(next):
     if (next and any(entity == next for entity in non_entity_recognition_in_next_word)):
         return 0
     else:
         return 1
 
-non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "Secretary of", "friend of", "Union on"]
+non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "Secretary of", "friend of", "Union on", "State University", "Academy of", "Art of"]
 def is_previous_two_words_for_non_entity_recognotion(prev, prev_prev):
     if (prev and prev_prev and any(entity == (" ".join([prev_prev, prev])) for entity in non_entity_recognition_in_prev_prev_word)):
         return 0
@@ -233,29 +232,3 @@ def is_next_word_for_non_entity_recognition_specifics(next):
         return 0
     else:
         return 1
-
-
-# def starts_with_uppercase_letter(word):
-#     if(word[0].isupper()):
-#         return True
-#     else:
-#         return False
-#
-#
-# def is_all_lowercase(word):
-#     if word.islower():
-#         return True
-#     else:
-#         return False
-
-# def is_previous_word_THE(word):
-#     if(word.tolower() == "the"):
-#         return True
-#     else:
-#         return False
-
-# def is_all_capital(word):
-#     if word and word.isupper():
-#         return True
-#     else:
-#         return False

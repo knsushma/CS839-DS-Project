@@ -5,9 +5,8 @@ to conduct attacks throughout <location>Turkey</location>” in areas where
 American citizens and expatriates lived or visited. That warning came three
 days after a gunman, described by Turkish officials as a      police officer,
 assassinated Andrey G. Karlov, the Russian ambassador to
-<location>Turkey</location>, at an art gallery in the capital, Ankara. The
-gunman shouted “God is great!” and “Don’t forget Aleppo, don’t forget
-<location>Syria</location>!” during the attack, which was captured on video.
+<location>Turkey</location>, at an art gallery in the capital, <location>Ankara</location>. The
+gunman shouted “God is great!” and “Don’t forget Aleppo, don’t forget Syria!” during the attack, which was captured on video.
 The   Anadolu news agency said that 38 of the 39 people who died in the attack
 on Sunday had been identified, The Associated Press reported. At least two
 dozen of the people killed were said to be foreigners.

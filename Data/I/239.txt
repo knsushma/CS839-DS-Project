@@ -7,7 +7,7 @@ Tim O’Brien, a journalist. He claimed the development had fallen apart after
 Mr. O’Brien wrote a book saying that Mr. Trump was worth far less than he
 claimed. But Mr. Trump said he was close to striking another real estate deal
 in <location>Moscow</location>. “We’re going to do one fairly soon,” he said.
-<location>Moscow</location>, he insisted “will be one of the cities where we
+Moscow, he insisted “will be one of the cities where we
 will be. ” The Trump brand did appear in <location>Russia</location>, but not
 quite as the grand edifice the real estate mogul had envisioned. Trump Super
 Premium Vodka, with the shine of bottles glazed with   gold, was presented at
@@ -15,7 +15,7 @@ the Millionaire’s Fair in <location>Moscow</location> in 2007, and large order
 for the spirits followed. The vodka was sold in <location>Russia</location> as
 late as 2009, but eventually fizzled out. In a news release, Mr. Trump
 heralded it as a “tremendous achievement. ” He tried  —   and failed  —
-to start a reality show in St. Petersburg in 2008 starring a Russian mixed
+to start a reality show in <location>St. Petersburg</location> in 2008 starring a Russian mixed
 martial arts fighter. But real estate developments remained a constant
 goal. From 2006 to 2008, his company applied for several trademarks in
 <location>Russia</location>, including Trump, Trump Tower, Trump

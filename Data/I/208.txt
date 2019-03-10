@@ -32,8 +32,8 @@ as well as industrial safety and cooling and ventilation equipment. The
 project, along with the smaller array AES has installed in <location>El
 Cajon</location>, could provide the    leap Mr. Gluski has been striving
 for. AES has a deal for an even bigger installation in a $1 billion project
-in Long Beach with Southern California Edison that is not part of the
-Aliso Canyon remediation effort it is projected to go online by the end
+in <location>Long Beach</location> with Southern California Edison that is not part of the
+<location>Aliso Canyon</location> remediation effort it is projected to go online by the end
 of 2020. The electric company plans to use batteries as part of a plan
 to replace an aging gas plant along the San Gabriel River. Long term,
 Mr. Gluski plans to shift the company’s   portfolio  —   still heavily

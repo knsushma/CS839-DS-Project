@@ -5,7 +5,7 @@ now has 13 million monthly unique visitors. On the mix, Ms. Kerr included the
 Mazzy Star song “I’ve Been Let Down. ” It was “a bit of an Easter egg of my
 actual feelings,” she said. Around this time, Ms. Kerr texted Mr. Leahy a photo
 of the drink menu from a bar,  the Roger Room. She had focused on a drink named
-for the song “Christmas Card From a Hooker in Minneapolis,” which happens to be
+for the song “Christmas Card From a Hooker in <location>Minneapolis</location>,” which happens to be
 Mr. Leahy’s favorite Tom Waits tune. “This made me rethink things a bit,” he
 said, adding, “Hillary Kerr was clearly not to be trifled with. ” In early
 2014, Mr. Leahy invited her to a Bleachers concert. The band’s lead singer is
@@ -13,8 +13,8 @@ Jack Antonoff, who is Ms. Dunham’s boyfriend. Ms. Dunham was at the concert as
 well, and on meeting Ms. Kerr, she said, “I’ve heard so much about you. ” Ms.
 Kerr and Mr. Leahy shared their first kiss that night. He proposed to her on
 Polihale Beach in <location>Kauai</location>, <location>Hawaii</location>, on
-Jan. 1, 2016. On Dec. 10, 125 friends and relatives gathered in Palm Springs,
-Calif. at the Colony Palms Hotel, which was opened in 1936 by the reputed
+Jan. 1, 2016. On Dec. 10, 125 friends and relatives gathered in <location>Palm Springs</location>,
+<location>Calif.<location> at the Colony Palms Hotel, which was opened in 1936 by the reputed
 mobster Al Wertheimer and whose poolside guests have included Frank Sinatra,
 Ronald Reagan, Kirk Douglas and Zsa Zsa Gabor. Ms. Kerr walked down a grassy
 aisle in a  courtyard wearing a structured lace Reem Acra dress, strapless with

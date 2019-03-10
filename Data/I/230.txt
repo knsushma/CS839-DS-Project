@@ -9,11 +9,11 @@ and how best to do it,” Anthony Browne, the chief executive of the British
 Bankers Association, wrote in The Observer last year. “Their hands are
 quivering over the relocate button,” he added. Sectors like agriculture,
 hospitality and construction are worried about labor. They all rely heavily on
-workers from Southern or Eastern Europe, whose right to employment here may be
+workers from Southern or Eastern <location>Europe</location>, whose right to employment here may be
 curbed to achieve Mrs. May’s objective of reducing immigration. Mrs. May has
-not said explicitly whether she wants <location>Britain</location> to remain in
+not said explicitly whether she wants Britain to remain in
 Europe’s Customs Union, which provides for   trade across the   bloc, and
-includes some nonmembers like <location>Turkey</location>. Nor has she detailed
+includes some nonmembers like Turkey. Nor has she detailed
 what kind of relationship she wants with the European Union’s single market,
 which aims to eliminate nontariff barriers and to forge a single services
 market. But she said in a recent interview that when Britain quits the union,

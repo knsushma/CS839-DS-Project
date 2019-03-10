@@ -3,8 +3,8 @@ able to increase the price, because the customer will say, ‘We will buy from
 the competition.’ ” The logic is to reduce the amount of products that are made
 in <location>Britain</location> for continental Europe, and vice versa. Mr.
 Magal said that European clients were asking him to consider moving production.
-“With all the new projects we are getting now from Europe, they are saying,
-‘Why can’t you put it in your plant in Europe? Why do you need to do it in the
+“With all the new projects we are getting now from <location>Europe</location>, they are saying,
+‘Why can’t you put it in your plant in <location>Europe</location>? Why do you need to do it in the
 <location>U. K.</location>?’ ” he said. If there is a hard Brexit, as seems
 increasingly likely, some production might be shifted to
 <location>Britain</location> from the Continent to serve the British market,

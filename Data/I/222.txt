@@ -1,7 +1,7 @@
 For a nation robbed of connectivity for more than a decade, the sudden surge of digital
 news  —   through email, messaging and social media  —   seemed like a
 particularly cruel way to find out their special treatment had ended. A few
-blocks from the American Embassy, in the neighborhood of Vedado, the casual
+blocks from the American Embassy, in the neighborhood of <location>Vedado</location>, the casual
 atmosphere changed suddenly as the news began to spread. Visitors checking
 their phones shared the news with those within shouting distance. One youth
 yelled to the gathered crowds: “Have you heard? This screws up all your
@@ -11,5 +11,5 @@ lives. ” Miguel Alberto Escalona, 24, sat with his wife in a park in
 the surface frustrations for young Cubans, especially concerning the new
 dynamic that an increase in tourism is bringing to the nation. Food prices
 have surged to meet the demand, while what scant resources the country are
-redirected to the   outsiders now flooding <location>Cuba</location>,
+redirected to the   outsiders now flooding Cuba,
 especially Americans.

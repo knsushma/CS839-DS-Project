@@ -19,4 +19,4 @@ Kenyan government vowed to appeal, arguing that the situation in
 unclear whether the Kenyan government will follow the court order. Though
 Kenya's judiciary is considered strong and independent, the president has
 enormous power and Kenyan security forces routinely violate the rights of
-Somali refugees.
+<location>Somali</location> refugees.

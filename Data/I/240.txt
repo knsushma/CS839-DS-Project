@@ -1,4 +1,4 @@
-He told the <location>Manhattan</location> audience that “I
+He told the Manhattan audience that “I
 really prefer <location>Moscow</location> over all cities in the world” and
 that he had visited <location>Russia</location> a   times in 18 months. In
 2011, he was still at it. “Heading to the airport to go to
@@ -13,7 +13,7 @@ backstage of the auditorium at Planet Hollywood Resort and Casino, said the
 news was a surprise. She was expecting one of the Latin American countries
 where beauty pageants are widely celebrated. “I was like, ‘Wow, Russia, I
 never thought of that,’” she said. Phil Ruffin, Mr. Trump’s partner in the
-Trump International Hotel and Tower in Las Vegas, said he was happy to lend
+Trump International Hotel and Tower in <location>Las Vegas</location>, said he was happy to lend
 him his new Global 5000 private plane for the trip. He and his wife met Mr.
 Trump in <location>Moscow</location>, also checking into the  . Mr. Ruffin
 said he and Mr. Trump had lunch at the hotel with the Agalarovs. The

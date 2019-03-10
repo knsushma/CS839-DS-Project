@@ -1,5 +1,4 @@
-<location>MUMBAI</location>, <location>India</location>  —   It was a bold and
-risky gamble by Prime Minister Narendra Modi of <location>India</location> that
+It was a bold and risky gamble by Prime Minister Narendra Modi of <location>India</location> that
 quickly seemed to backfire. The announcement of a ban on the largest currency
 bills circulating in <location>India</location>, which came into full effect at
 midnight Friday, the last day for depositing the old notes at banks, set off

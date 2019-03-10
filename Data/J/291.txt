@@ -7,7 +7,7 @@ Joel Silverstein, president of the consultancy East West Hospitality
 Group and a former senior executive with restaurants, the onetime
 parent of Yum Brands. “That was a complete disaster. ” Still, Yum once
 seemed to have cracked the China code. Since opening its first KFC near
-Tiananmen Square in 1987, Yum has grown into the biggest Western
+<location>Tiananmen Square</location> in 1987, Yum has grown into the biggest Western
 chain in the country, with more than 7, 300 stores in over 1, 100
 cities, three times that of its rival McDonald’s. Part of the secret
 was localization: KFC offered fried dough sticks and congee for

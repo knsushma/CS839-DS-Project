@@ -8,7 +8,7 @@ Iraqi forces to prevent Islamic State fighters from rising up in
 “They have proved very resilient,” he said. Falluja is hardly the government’s
 only worry in a nation with 3. 1 million internally displaced people. The
 government is pouring resources into the Mosul battle while also trying to
-rebuild Falluja and Ramadi, in Anbar Province, and to repair the city of
+rebuild Falluja and Ramadi, in <location>Anbar Province</location>, and to repair the city of
 <location>Tikrit</location>, farther north. Of the 320, 000 people who fled
 Falluja for aid camps, about 250, 000 have returned since   the United Nations
 said. They are desperate to live at home again, whatever the risk. In south

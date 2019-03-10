@@ -6,7 +6,7 @@ government and Volkswagen, all of whom were eager to resolve the case before
 Donald J. Trump takes office. Volkswagen sales have been holding up even though
 the company’s reputation has taken a beating. Volkswagen said this week that it
 sold 10. 3 million vehicles worldwide in 2016, a 4 percent increase over 2015.
-But Volkswagen’s market share in Europe, which accounts for about a third of
+But Volkswagen’s market share in <location>Europe</location>, which accounts for about a third of
 sales, slipped during the year to 24 percent from 25 percent. And the company
 continues to struggle in the <location>United States</location>. Sales of Volkswagen brand cars fell
 8 percent last year to 323, 000 vehicles, though there were signs of a rebound
@@ -21,5 +21,5 @@ management board “duly fulfilled its disclosure obligation under German capita
 markets law. ” Mr. Pötsch was a member of the management board before becoming
 chairman of the supervisory board, an oversight panel, in October 2015. <location>Germany</location>
 does not usually extradite its own citizens. But any employees indicted by
-<location>United States</location> authorities risk arrest if they travel outside <location>Germany</location>, even to
+United States authorities risk arrest if they travel outside <location>Germany</location>, even to
 other European countries.

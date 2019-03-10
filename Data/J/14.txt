@@ -5,7 +5,7 @@ farmer, Cédric Herrou, a bearded olive grower, has become something of a hero
 after he shepherded migrants across the Italian border and into the Roya Valley
 of southern <location>France</location>, challenging official policy of
 rounding up migrants and sending them to detention centers or deporting them. A
-court in Nice ordered Mr. Herrou on Friday to pay a fine of 3, 000 euros, or
+court in <location>Nice</location> ordered Mr. Herrou on Friday to pay a fine of 3, 000 euros, or
 about $3, 200. If he stays out of trouble for five years, he will not have to
 pay it. The light sentence  —   almost a nonsentence, given that the
 prosecutor,   Prêtre, had asked for a tougher punishment  —   was an indication
@@ -33,6 +33,6 @@ that he is sheltering five migrant minors from <location>Sudan</location> and
 <location>France</location> and in <location>Italy<l/ocation>, so I take
 action,” he said. Mr. Herrou is not the only person to have appeared in court
 for illegally assisting migrants. Last month,   Mannoni, a researcher, was
-acquitted by the same court in Nice of having offered a ride to migrants.
+acquitted by the same court in <location>Nice</location> of having offered a ride to migrants.
 Border control has become a defining political issue in
 <location>France</location> in light of repeated terrorist attacks.
