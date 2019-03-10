@@ -17,7 +17,7 @@ def form_dataset_matrix(positive_entity_feature_set, negative_entity_feature_set
     return data_frame
 disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms", "Mrs", "January", "February", "March", "April", "May", "June", "July", "August",
                     "September", "October", "November", "December", "Sunday", "Monday", "Tuesday", "Wednesday",
-                    "Thursday", "Friday", "Saturday", "Good"]
+                    "Thursday", "Friday", "Saturday", "Good", "Christmas", "New Year", "Eastern"]
 # disposable_words = ['a','an','the','have','has','been','was','is','by','to','at','for','in','of','from','like','with','were',
 #                     'are','what','where','how','why','who','it',"it's",'and','but','on',"its",'we','our','over',
 #                     'under',"about","upon","these","those","this","that","i","they","them", "Mr", ""]

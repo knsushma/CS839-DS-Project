@@ -27,13 +27,20 @@ def extract_feature_set(words, entity_set):
             #print(words[index-1], words[index], words[index:])
 
             #F1_A
-            if(is_previous_word_strong_preposition_for_entity_recognition(words[index-1])):
+            if(is_previous_word_strong_preposition_for_entity_recognition(words[index-1], words[index+1])):
                 feature_set.append(1)
             else:
                 feature_set.append(0)
 
             # F1_B
             if (is_previous_word_weak_preposition_for_entity_recognition(words[index - 1])):
+                feature_set.append(1)
+            else:
+                feature_set.append(0)
+
+            # F1_C
+            if (is_index_not_out_of_bound(index-1, entity[1], corpus_length) and
+                    is_previous_to_previous_word_preposition_for_entity_recognition(words[index - 2], words[index - 1])):
                 feature_set.append(1)
             else:
                 feature_set.append(0)
@@ -72,7 +79,7 @@ def extract_feature_set(words, entity_set):
 
 
         else:
-            feature_set.extend([0,0,0,0,0,0, 0])
+            feature_set.extend([0,0,0,0,0,0,0,0])
 
         #Negative Cases
         if (is_index_not_out_of_bound(index, entity[1], corpus_length)):
@@ -124,9 +131,10 @@ def is_english_word(word):
     else:
         return False
 
-entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on"]
-def is_previous_word_strong_preposition_for_entity_recognition(prev):
-    if (prev and any(prev == entity for entity in entity_recognition_strong_prepositions)):
+entity_recognition_strong_prepositions = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
+def is_previous_word_strong_preposition_for_entity_recognition(prev, next):
+    if ( next and (all(entity != next for entity in non_entity_recognition_in_next_word)) and
+            prev and any(prev == entity for entity in entity_recognition_strong_prepositions)):
         return True
     else:
         return False
@@ -138,12 +146,23 @@ def is_previous_word_weak_preposition_for_entity_recognition(prev):
     else:
         return False
 
-entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower"]
+entity_recognition_specifics = ["eastern" ,"western", "southern", "northern", "continental", "central", "upper", "lower", "southeastern", "southwestern", "northeastern", "northwestern"]
 def is_previous_word_for_entity_recognition(prev):
     if (prev and any(prev.lower() == word for word in entity_recognition_specifics)):
         return True
     else:
         return False
+
+entity_recognition_prepositions_in_pre_pre_word = ["in", "of", "at", "near", "to", "from", "across", "outside", "on", "around"]
+entity_recognition_prepositions_in_pre_word = ["the", "a", "an"] + entity_recognition_specifics
+def is_previous_to_previous_word_preposition_for_entity_recognition(prev_prev, prev):
+    # prev and any(prev == entity for entity in entity_recognition_prepositions_in_pre_word) and
+    if (prev and any(prev.lower() == entity for entity in entity_recognition_prepositions_in_pre_word) and
+            prev_prev and any(prev_prev == entity for entity in entity_recognition_prepositions_in_pre_pre_word)):
+        return True
+    else:
+        return False
+
 
 def is_previous_word_ending_with_comma(prev):
     if (prev and prev[-1] == "," and "</location>" in prev):
@@ -191,7 +210,7 @@ def is_word_ending_with_non_entity_recognition(word):
     else:
         return False
 
-non_entity_recognition_in_next_word = ["University", "Police", "government", "Times", "Post", "Institute", "Development", "Society", "Development", "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park"]
+non_entity_recognition_in_next_word = ["University", "Police", "government", "Times", "Post", "Institute", "Development", "Society", "Development", "Society", "River", "Lake", "Ocean", "Sea", "Canal", "Park", "studio", "Corporation", "Entertainment", "Legislature"]
 def is_next_word_for_non_entity_recognition(next):
     if (next and any(entity == next for entity in non_entity_recognition_in_next_word)):
         return True
