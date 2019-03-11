@@ -1,9 +1,9 @@
 
 ### Entity Type
-Location
+* Location
 
 ### Tag Description
-* Locations are labelled/mentioned in the documents using **\<location\>....\</location\>** tags.
+* Locations are mentioned in the documents using **\<location\>....\</location\>** tags.
 
 
 ### Tag Examples
@@ -16,3 +16,4 @@ Location
 #### Negatives
 1. University of Southern California
 2. California's economy
+3. Hollywood star
