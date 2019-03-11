@@ -9,9 +9,9 @@
 ### Tag Examples
 
 #### Positives
-1. \<location\>United States\</location\>
-2. \<location\>India\</location\>
-3. \<location\>Europe\</location\>
+1. He recently moved to the \<location\>United States\</location\>.
+2. The climate in \<location\>India\</location\> was pleasant that year.
+3. The lady claimed to be from \<location\>Europe\</location\>.
 
 #### Negatives
 1. University of Southern California
