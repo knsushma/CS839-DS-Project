@@ -12,26 +12,32 @@ python3 main.py
 ```
 
 #### Entity Type
+```
 * Location
+```
 
 #### Tag Description
+```
 * Locations are mentioned in the documents using **\<location\>....\</location\>** tags.
-
+```
 
 ### Tag Examples
 
 #### Positives
+```
 1. \<location\>United States\</location\>
 2. \<location\>India\</location\>
 3. \<location\>Europe\</location\>
-
+```
 #### Negatives
+```
 1. University of Southern California
 2. California's economy
 3. Hollywood star
-
+```
 
 #### Approach Followed
+```
 In this project stage we will perform information extraction (IE) from natural text documents, using a supervised learning approach. Here are the steps that we followed: 
 
 * Collected 300 text documents from which we will extract mentions of LOCATION entity type. These documents contains well-formed sentences (such as those in news articles). 
@@ -51,6 +57,6 @@ In this project stage we will perform information extraction (IE) from natural t
 * After above setps, Random Forest classifier performed better which provided 92% precision and 77% recall. As we were able to achieve required precision of 90% and recall of 60%, we did not perfom the Rules based postprocessing step. Let us call this as model X.
 
 * Then we applied X to the set-aside test set J and found that model M reported 91% precision and 80% recall. 
-
+```
 
 
