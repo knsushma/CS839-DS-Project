@@ -2,7 +2,6 @@ from stage1.named_entity_extraction import form_feature_dataframe
 from stage1.model_training import predict_accuracy_on_diff_classifiers
 from stage1.model_evaluation import model_evaluation
 import glob
-import os
 
 
 def named_entity_extraciton_on_train_test_dataset():
