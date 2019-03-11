@@ -8,9 +8,8 @@ Follow steps mentioned in python-setup-data-extraction.pdf
 ```
 
 #### Running the code
-```
-Run from CS839-DS-Project directory
-./entity_extraction
+```shell
+main.py
 ```
 
 #### Entity Type
