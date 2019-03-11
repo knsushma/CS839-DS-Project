@@ -1,0 +1,10 @@
+Apple, complying with what it said was a request from Chinese authorities,
+removed news apps created by The New York Times from its app store in <location>China</location>
+late last month. The move limits access to one of the few remaining channels
+for readers in mainland <location>China</location> to read The Times without resorting to special
+software. The government began blocking The Times’s websites in 2012, after a
+series of articles on the wealth amassed, but it had struggled in recent months to prevent readers
+from using the   app. Apple removed both the   and   apps from the app store in
+<location>China</location> on Dec. 23. Apps from other international publications, including The
+Financial Times and The Wall Street Journal, were still available in the app
+store. 
