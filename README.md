@@ -13,6 +13,7 @@ Stage 3: Entity matching.
 Stage 4: Integrating and performing analysis.
 ```
 
+## Stage 1
 ### Location Extraction From Natural Text
 
 ##### In this project stage your team will perform information extraction (IE) from natural text documents, using a supervised learning approach.
