@@ -156,7 +156,7 @@ def is_previous_word_location_with_AND_OR(prev, prev_prev):
     else:
         return 0
 
-entity_recognition_prepositions_in_prev_prev_word = ["and", "in", "of", "at", "for", "with", "around", "from", "across", "like"]
+entity_recognition_prepositions_in_prev_prev_word = ["and", "in", "of", "at", "for", "with", "around", "from", "across"]
 country_list = ["United", "Czech Republic", "Philippines", "U.S.", "U. S.", "U.K.", "New York", "United Arab Emirates"]
 def is_previous_two_words_preposition_and_THE(prev, prev_prev, word):
     if (prev and prev.lower() == "the" and prev_prev and
@@ -219,7 +219,7 @@ def is_next_word_for_non_entity_recognition(next):
     else:
         return 1
 
-non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "Secretary of", "friend of", "Union on", "State University", "Academy of", "Art of"]
+non_entity_recognition_in_prev_prev_word = ["University of", "College of", "Times of", "Gulf of", "Departments of", "Department of", "Secretary of", "friend of", "Union on", "State University", "Academy of", "Art of", "Republic of"]
 def is_previous_two_words_for_non_entity_recognotion(prev, prev_prev):
     if (prev and prev_prev and any(entity == (" ".join([prev_prev, prev])) for entity in non_entity_recognition_in_prev_prev_word)):
         return 0

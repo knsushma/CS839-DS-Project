@@ -1,0 +1,14 @@
+ Luis Fernando García, R3D’s director, says that intimidation
+and online surveillance have increased under Peña Nieto’s presidency, and he
+took notice when Citizen Lab, in 2014, released a report that traced a chain of
+servers associated with Hacking Team that routed data through <location>Hong Kong</location>,
+<location>London</location>, <location>Amsterdam</location> and <location>Atlanta</location> 
+before terminating somewhere inside <location>Mexico</location>.
+Exactly who was on the receiving end of the traffic and what they were doing
+with it was unknown at the time, but now R3D’s team recognized that this could
+be their chance to find out. Shortly thereafter, R3D published three invoices
+from the Hacked Team cache showing that one state government  —   that of
+Jalisco, on the Pacific Coast  —   had paid the company nearly half a million
+euros for the Remote Control System. Soon other documents were found in the
+leak to implicate several more states though most of the
+states denied ever using the software.

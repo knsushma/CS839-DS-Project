@@ -11,7 +11,7 @@ def model_evaluation(train_data, test_data):
     # classifier = DecisionTreeClassifier(class_weight = 'balanced')
     # classifier = RandomForestClassifier(n_estimators=100)
     # classifier = svm.SVC(kernel='linear', C=1)
-    classifier = LogisticRegression(solver='lbfgs')
+    # classifier = LogisticRegression(solver='lbfgs')
     # classifier = LinearRegression()
     classifier.fit(train_data[:, 1:-1].astype(int), train_data[:, -1].astype(int))
     predictions = classifier.predict(test_data[:, 1:-1].astype(int))
