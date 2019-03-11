@@ -1,5 +1,6 @@
 # CS839-DS-Project
-Project on Data Extraction
+
+### [Project on Data Extraction](https://sites.google.com/view/data-science-ask/home)
 
 
 The goal of this project is to get our hands "dirty" as a budding data scientist (and to practice certain materials taught in the class). After finishing the project, we will gain a much better appreciation for working with "data in the wild", a better understanding of what it means to work as a data scientist, a deeper understanding of the class materials, a deeper understanding of how to use and debug machine learning models, a chance to work with popular data science tools in Python, and a glimpse into some research efforts in data science.
