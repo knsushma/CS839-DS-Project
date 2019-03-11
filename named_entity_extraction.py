@@ -51,17 +51,16 @@ unigram_disposable_words = ["I", "He", "She", "They", "Those", "The", "Mr", "Ms"
                     "Google", "Instagram", "Bloomberg", "Volkswagen", "Trump", "Ivanka", "Donald", "Takata", "Minister", "Government", "Oscar", "Democrats", "Planet", "Earth",
                     "King", "University", "south", "north", "east", "west", "eastern", "western", "southern", "northern", "continental", "central", "upper", "lower",
                     "southeastern", "southwestern", "northeastern", "northwestern", "Southeast", "Southwest", "Northeast", "NorthWest", "mainland", "contemporary",
-                    "Air", "Congress", "CBS", "KFC", "Gov", "Senator", "Election" ]
+                    "Air", "Congress", "CBS", "KFC", "Gov", "Senator", "Election", "Skype", "Sony"]
 
 bigram_disposable_words = ["New Year", "New Year's", "Prime Minister", "Vice President", "according to", "Election Day"]
 
 
-def form_feature_dataframe(file_path, files_list):
+def form_feature_dataframe(files_list):
     dataframe = []
     for file_name in files_list:
 
-        filePath = file_path + str(file_name)
-        document = open(filePath, 'r', encoding="utf8")
+        document = open(file_name, 'r', encoding="utf8")
 
         labeled_entity = []
         unlabeled_entity = []
