@@ -3,13 +3,13 @@
 ##### In this project stage your team will perform information extraction (IE) from natural text documents, using a supervised learning approach.
 
 #### Setup & Requirements
-```shell
-pip3 install -r requirements.txt
+```
+Follow steps mentioned in python-setup-data-extraction.pdf
 ```
 
 #### Running the code
 ```shell
-Python Virtual environment Setup. Follow steps mentioned in python-setup-data-extraction.pdf
+./entity_extraction
 ```
 
 #### Entity Type
