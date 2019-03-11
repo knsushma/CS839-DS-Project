@@ -57,6 +57,5 @@ In this project stage we will perform information extraction (IE) from natural t
 * After above setps, Random Forest classifier performed better which provided 92% precision and 77% recall. As we were able to achieve required precision of 90% and recall of 60%, we did not perfom the Rules based postprocessing step. Let us call this as model X.
 
 * Then we applied X to the set-aside test set J and found that model M reported 91% precision and 80% recall. 
-```
 
 
