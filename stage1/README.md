@@ -3,13 +3,14 @@
 ##### In this project stage your team will perform information extraction (IE) from natural text documents, using a supervised learning approach.
 
 #### Setup & Requirements
-```shell
-pip3 install -r requirements.txt
+```
+Follow steps mentioned in python-setup-data-extraction.pdf
 ```
 
 #### Running the code
-```shell
-python3 main.py
+```
+Run from CS839-DS-Project directory
+./entity_extraction
 ```
 
 #### Entity Type
@@ -26,9 +27,9 @@ Locations are mentioned in the documents using <location>....</location> tags.
 
 #### Positives
 ```
-1. <location>United States</location>
-2. <location>India</location>
-3. <location>Europe</location>
+1. He recently moved to the \<location\>United States\</location\>.
+2. The climate in \<location\>India\</location\> was pleasant that year.
+3. The lady claimed to be from \<location\>Europe\</location\>.
 ```
 #### Negatives
 ```
