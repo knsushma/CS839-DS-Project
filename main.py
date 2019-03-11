@@ -8,8 +8,8 @@ def named_entity_extraciton_on_train_test_dataset():
 
     #files =  os.listdir("dataset/trainig_dataset/")
     print("Information Extraction using training and test dataset", "\n")
-    training_files = glob.glob("./dataset/training_dataset/*.txt")
-    test_files = glob.glob("./dataset/test_dataset/*.txt")
+    training_files = glob.glob("./stage1/dataset/training_dataset/*.txt")
+    test_files = glob.glob("./stage1/dataset/test_dataset/*.txt")
 
     training_dataframe = form_feature_dataframe(training_files)
     test_dataframe = form_feature_dataframe(test_files)
@@ -24,8 +24,8 @@ def named_entity_extraciton_on_train_test_dataset():
 # Used for fixing feature extraction rules on traning dataset (spliting traing dataset into P & Q dataset)
 def named_entity_extraciton_on_training_dataset():
     print("Information Extraction using only training dataset", "\n")
-    training_files = glob.glob("./dataset/P/*.txt")
-    test_files = glob.glob("./dataset/Q/*.txt")
+    training_files = glob.glob("./stage1/dataset/P/*.txt")
+    test_files = glob.glob("./stage1/dataset/Q/*.txt")
 
     training_dataframe = form_feature_dataframe(training_files)
     test_dataframe = form_feature_dataframe(test_files)
