@@ -1,5 +1,6 @@
 ### Location Extraction From Natural Text
 
+##### In this project stage your team will perform information extraction (IE) from natural text documents, using a supervised learning approach.
 
 #### Setup & Requirements
 ```shell
