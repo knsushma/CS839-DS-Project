@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 #### Running the code
 ```shell
-python3 main.py
+Python Virtual environment Setup. Follow steps mentioned in python-setup-data-extraction.pdf
 ```
 
 #### Entity Type
