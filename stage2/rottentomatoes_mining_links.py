@@ -1,6 +1,4 @@
 from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-import re
 import json
 
 links = []
@@ -11,16 +9,7 @@ for page_num in range(1, 101):
     for item in json_response["results"]:
         links.append("https://www.rottentomatoes.com" + item["url"])
 
-with open("./rottentomatoes_hyperlinks.txt", "w") as output_file:
-    for link in links:
-        output_file.write("%s\n" % link)
-
-# web_page = urlopen(Request("https://www.rottentomatoes.com/browse/dvd-streaming-all/"))
-# soup = BeautifulSoup(web_page, 'html.parser',from_encoding=web_page.info().get_param('charset'))
-#
-# links = []
-# for link in soup.find_all("a", attrs={'href': re.compile("^https://")}):
-#     url = link.get('href')
-#     if ("www.rottentomatoes.com/tv/") in url and url not in links:
-#         print(url)
-#         links.append(url)
+text_file = open("./rottentomatoes_hyperlinks.txt", "w")
+for link in links:
+    text_file.write("%s\n" % link)
+text_file.close()
