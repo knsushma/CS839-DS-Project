@@ -16,4 +16,4 @@ imdb_data.csv has 3100 tuples.
 **Rating**: Rating of the movie (like, R: Restricted, G: General Audiences, PG: Parental Guidance Suggested)  <br />
 **Genre**: The category of the movie (like: Drama, Comedy, Action, Horror, Romance etc)  <br />
 **Directed By**: Name(s) of director(s) who directed the movie  <br />
-**Runtime**: The duration of the movie. The formate is in "Minutes" (Ex: 146 minutes)   <br />
+**Runtime**: The duration of the movie. The formate is in "Minutes" (Ex: 1h 50min)   <br />
