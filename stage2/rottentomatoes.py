@@ -42,21 +42,6 @@ for link in links:
         tuple.append(attribute_map.get(e, "NA"))
     table.append(tuple)
 
+# Write the contents of table (A list of lists with each list representing a tuple)
 csv_file = csv.writer(open("./rottentomatoes_data.csv", "w"), dialect="excel")
 csv_file.writerows(table)
-
-# for link in links[]:
-#
-#     web_page = urlopen(Request(link))
-#     soup = BeautifulSoup(web_page, 'html.parser',from_encoding=web_page.info().get_param('charset'))
-#
-
-# web_page = urlopen(Request("https://www.rottentomatoes.com/browse/dvd-streaming-all/"))
-# soup = BeautifulSoup(web_page, 'html.parser',from_encoding=web_page.info().get_param('charset'))
-#
-# links = []
-# for link in soup.find_all("a", attrs={'href': re.compile("^https://")}):
-#     url = link.get('href')
-#     if ("www.rottentomatoes.com/tv/") in url and url not in links:
-#         print(url)
-#         links.append(url)
