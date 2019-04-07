@@ -4,7 +4,7 @@ rottentomatoes_data.csv has 3185 tuples.
 imdb_data.csv has 3100 tuples.
 ```
 
-######rottentomatoes_data.csv has the following attributes: \\
+######rottentomatoes_data.csv has the following attributes: <br />
 **Name**: Name of the movie
 **Rating**: Rating of the movie (like, R: Restricted, G: General Audiences, PG: Parental Guidance Suggested)
 **Genre**: The category of the movie (like: Drama, Comedy, Action, Horror, Romance etc)
