@@ -6,6 +6,7 @@ base_string = "https://www.imdb.com/list/ls057823854/?sort=list_order,asc&st_dt=
 
 # Each page has 100 movies, taking 32 pages to get 3000 movies with a buffer of 200 more.
 for page_num in range(1, 33):
+    print("In Page: " + str(page_num))
     url_link = base_string + str(page_num)
     resp = urllib.request.urlopen(url_link)
     soup = BeautifulSoup(resp, 'html.parser', from_encoding=resp.info().get_param('charset'))
