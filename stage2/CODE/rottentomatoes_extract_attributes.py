@@ -9,10 +9,11 @@ links = [link.strip("\n") for link in text_file]
 
 # Final data table that contains multiple tuple with each tuple having attributes (Extractors mentioned below)
 table = []
-table.append(["Name", "Rating", "Genre", "Directed By", "Runtime"])
+table.append(["Name", "Rating", "Genre", "Directed By", "Runtime", "Year"])
 extractors = ["Rating", "Genre", "Directed By", "Runtime"]
 
-for link in links:
+year_count = 0
+for link in ["https://www.rottentomatoes.com/m/goon_last_of_the_enforcers"]:
     tuple = []
     web_page = ""
     # Read contents of the webpage, continue if webpage is Not Found/Unreachable/Operation Timed Out
@@ -30,6 +31,12 @@ for link in links:
     #Extract the attributes by tag name
     name = soup.find("h1", {"class" : "mop-ratings-wrap__title mop-ratings-wrap__title--top"}).text
     tuple.append(name)
+    year = soup.find("span", {"class" : "h3 year heroImageNoMovie-year"})
+    if (year):
+        year_count += 1
+        tuple.append(year.text)
+    else:
+        tuple.append("NA")
     contents = soup.find_all("li", {"class" : "meta-row clearfix"})
     attribute_map = {}
     for content in contents:
@@ -37,11 +44,16 @@ for link in links:
         attribute_name = content_soup.find("div", {"class" : "meta-label subtle"}).text.replace(":", "").strip()
         if  attribute_name in extractors:
             value = content_soup.find("div", {"class" : "meta-value"}).text
-            attribute_map[attribute_name] = ' '.join(value.split())
+            if attribute_name == "Rating":
+                attribute_map[attribute_name] = ' '.join(value.split()).split("(")[0].strip()
+            else:
+                attribute_map[attribute_name] = ' '.join(value.split())
+
     for e in extractors:
         tuple.append(attribute_map.get(e, "NA"))
     table.append(tuple)
 
 # Write the contents of table (A list of lists with each list representing a tuple)
-csv_file = csv.writer(open("./rottentomatoes_data.csv", "w"), dialect="excel")
-csv_file.writerows(table)
+#csv_file = csv.writer(open("./rottentomatoes_data.csv", "w"), dialect="excel")
+#csv_file.writerows(table)
+print(table)
