@@ -2,18 +2,22 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from bs4 import BeautifulSoup
 import csv
+import json
 
 # Read links for webpages from which we extract attributes/data
-text_file = open("./rottentomatoes_hyperlinks.txt")
+text_file = open("./rottentomatoes_movie_hyperlinks.txt")
 links = [link.strip("\n") for link in text_file]
 
 # Final data table that contains multiple tuple with each tuple having attributes (Extractors mentioned below)
 table = []
-table.append(["Name", "Rating", "Genre", "Directed By", "Runtime", "Year"])
+table.append(["Name", "Year", "Rating", "Genre", "Directed By", "Runtime"])
 extractors = ["Rating", "Genre", "Directed By", "Runtime"]
 
 year_count = 0
-for link in ["https://www.rottentomatoes.com/m/goon_last_of_the_enforcers"]:
+loop_num = 0
+for link in links:
+    print("Working on link: {0}".format(loop_num))
+
     tuple = []
     web_page = ""
     # Read contents of the webpage, continue if webpage is Not Found/Unreachable/Operation Timed Out
@@ -36,7 +40,12 @@ for link in ["https://www.rottentomatoes.com/m/goon_last_of_the_enforcers"]:
         year_count += 1
         tuple.append(year.text)
     else:
-        tuple.append("NA")
+        #Extract from script
+        try:
+            year = json.loads((soup.find("script", {"id" : "mps-page-integration"}).text.strip().split(";")[0]).split("=")[1].strip())['cag[release]']
+            tuple.append(year)
+        except Exception as e:
+            tuple.append("NA")
     contents = soup.find_all("li", {"class" : "meta-row clearfix"})
     attribute_map = {}
     for content in contents:
@@ -53,7 +62,9 @@ for link in ["https://www.rottentomatoes.com/m/goon_last_of_the_enforcers"]:
         tuple.append(attribute_map.get(e, "NA"))
     table.append(tuple)
 
+    loop_num += 1
+
 # Write the contents of table (A list of lists with each list representing a tuple)
-#csv_file = csv.writer(open("./rottentomatoes_data.csv", "w"), dialect="excel")
-#csv_file.writerows(table)
-print(table)
+csv_file = csv.writer(open("../DATA/rottentomatoes_data.csv", "w"), dialect="excel")
+csv_file.writerows(table)
+#print(table)
