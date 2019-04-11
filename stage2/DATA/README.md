@@ -1,7 +1,7 @@
 #### We have 2 CSV files corresponding to data extracted from IMDB.com and rottentomatoes.com.
 ```
-rottentomatoes_data.csv has 3184 tuples.
-imdb_data.csv has 3193 tuples.
+rottentomatoes_data.csv has 5397 tuples.
+imdb_data.csv has 4886 tuples.
 ```
 
 ##### rottentomatoes_data.csv has the following attributes: <br />
