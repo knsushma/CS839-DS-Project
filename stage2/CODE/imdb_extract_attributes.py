@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 text_file = open("./imdb_movie_hyperlinks.txt")
 links = [link.strip("\n") for link in text_file]
 
-table = [["Name", "Rating", "Genre", "Directed By", "Runtime", "Year"]]
+table = [["Name", "Year", "Rating", "Genre", "Directed By", "Runtime"]]
 
 count = 1
 
@@ -68,11 +68,11 @@ for link in links:
 
         # UPDATE THE MOVIE FEATURES
         movie_features.append(movie_name)
+        movie_features.append(movie_year)
         movie_features.append(movie_rating)
         movie_features.append(movie_genres)
         movie_features.append(movie_directors)
         movie_features.append(movie_runtime)
-        movie_features.append(movie_year)
 
         print("Working on movie: " + str(count))
         count += 1
