@@ -1,8 +1,8 @@
-We chose to extract movies information from two well known movie rating websites #### [IMDB](https://www.imdb.com/) and #### [RottenTomatoes](https://www.rottentomatoes.com/)
+We chose to extract movies information from two well known movie rating websites [IMDB](https://www.imdb.com/) and [RottenTomatoes](https://www.rottentomatoes.com/)
 To have more most likely matching tuples we added couple of filters in both the websites before we could extract data. Filters like:
 
-1. Selected movies under DVD streaming section and sorted the movies list by Tomatometer (from RottenTomatoes website).
-2. Sorted the movies list from 1972-2016 (from IMDB website).
+1. Selected movies under DVD streaming section and sorted the movies list by Tomatometer (RottenTomatoes).
+2. Sorted the movies list from 1972-2016 (IMDB).
 
 The link for the filtered result can be found below
 
