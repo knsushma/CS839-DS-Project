@@ -27,8 +27,8 @@ We have extracted around ****5000**** tuples from both the websites and below sh
 
 #### We have 2 CSV files corresponding to data extracted from IMDB.com and rottentomatoes.com.
 ```
-rottentomatoes_data.csv has 5397 tuples.
-imdb_data.csv has 4886 tuples.
+rottentomatoes_data.csv has 5396 tuples.
+imdb_data.csv has 4885 tuples.
 ```
 
 ##### rottentomatoes_data.csv has the following attributes: <br />
