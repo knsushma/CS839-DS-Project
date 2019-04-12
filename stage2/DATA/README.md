@@ -13,7 +13,7 @@ The link for the filtered result can be found below
 ### [RottenTomatoes](https://www.rottentomatoes.com/browse/dvd-streaming-all?minTomato=0&maxTomato=100&services=amazon;hbo_go;itunes;netflix_iw;vudu;amazon_prime;fandango_now&genres=1;2;4;5;6;8;9;10;11;13;18;14&sortBy=tomato)
 
 
-We have extracted around ****5000**** tuples from both the websites and below shows the schema of the extracted data.
+We have extracted around 5000 tuples from both the websites and below shows the schema of the extracted data.
 
 | Attributes  |  Description |
 |---|---|
@@ -27,8 +27,8 @@ We have extracted around ****5000**** tuples from both the websites and below sh
 
 #### We have 2 CSV files corresponding to data extracted from IMDB.com and rottentomatoes.com.
 ```
-rottentomatoes_data.csv has 5397 tuples.
-imdb_data.csv has 4886 tuples.
+rottentomatoes_data.csv has 5396 tuples.
+imdb_data.csv has 4885 tuples.
 ```
 
 ##### rottentomatoes_data.csv has the following attributes: <br />
