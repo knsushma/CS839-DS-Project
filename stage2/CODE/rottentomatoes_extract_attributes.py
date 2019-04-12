@@ -65,6 +65,6 @@ for link in links:
     loop_num += 1
 
 # Write the contents of table (A list of lists with each list representing a tuple)
-csv_file = csv.writer(open("../data/rottentomatoes_data.csv", "w"), dialect="excel")
+csv_file = csv.writer(open("../DATA/rottentomatoes_data.csv", "w"), dialect="excel")
 csv_file.writerows(table)
 #print(table)

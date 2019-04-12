@@ -81,5 +81,5 @@ for link in links:
         print("Generic Exception at link: {0}".format(link))
 
 # WRITE THE MOVIE FEATURES TO THE CSV
-csv_file = csv.writer(open("../data/imdb_data.csv", "w", newline=""), dialect="excel")
+csv_file = csv.writer(open("../DATA/imdb_data.csv", "w", newline=""), dialect="excel")
 csv_file.writerows(table)
